@@ -24,3 +24,6 @@ Hours
 Monday–Friday: 9:00AM–4:30PM
 
  
+**Valorise Wiki:**
+
+https://github.com/Valorise-Limited/Valorise-website/wiki
