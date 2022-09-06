@@ -4,3 +4,6 @@ We are developing a resource for businesses that are interested in valorising th
 
 ### VALUE
 We create opportunities to exploit agri-food waste as a source of raw materials and high value chemicals generating novel revenue streams.
+
+### About
+Our mission is to help businesses valorise their waste and generate additional revenue
