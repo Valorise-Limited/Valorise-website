@@ -7,3 +7,19 @@ We create opportunities to exploit agri-food waste as a source of raw materials 
 
 ### About
 Our mission is to help businesses valorise their waste and generate additional revenue
+
+### Find us
+
+Address
+1 Concept Business Centre,
+
+Kettlestring Lane
+
+York, UK
+
+YO30 4XF
+
+Hours
+Monday–Friday: 9:00AM–4:30PM
+
+ 
