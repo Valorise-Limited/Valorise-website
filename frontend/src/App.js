@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <h1>Valorise website</h1>
+      <h1 style={{ fontSize: "32px" }}>Welcome to Valorise</h1>
     </>
   );
 }
