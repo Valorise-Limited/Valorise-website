@@ -1,8 +1,11 @@
+import Pages from "pages/Pages";
+
+
 function App() {
   return (
-    <>
-      <h1>Valorise website</h1>
-    </>
+    <div>
+      <Pages />
+    </div>
   );
 }
 
