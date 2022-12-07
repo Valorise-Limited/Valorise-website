@@ -1,0 +1,51 @@
+.d-flex {
+    display: flex;
+}
+
+.al-items {
+    align-items: center;
+}
+
+.js-content {
+    justify-content: space-between;
+}
+
+.js-between {
+    justify-content: space-between;
+}
+
+.js-evenly {
+    justify-content: space-evenly;
+}
+
+.logo-size {
+    width: 100px;
+    height: 70px;
+}
+
+
+.p-abs {
+    position: fixed;
+}
+
+.bt-0 {
+    bottom: 0;
+}
+
+.lft-0 {
+    left: 0;
+}
+
+.rgt-0 {
+    right: 0;
+}
+
+.bg-black {
+    background-color: #000;
+    color: #fff;
+    font-size: 3rem;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
