@@ -1,0 +1,30 @@
+.wwd-article {
+    padding: 6.4rem 20.2rem;
+}
+
+.wwd-article__upper-content {
+    display: flex;
+    align-items: center;
+
+    &>* {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+.wwd-article-pic {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.wwd-list {
+    padding-left: 2rem;
+    font-weight: 350;
+}
+
+.wwd-list-item {
+    line-height: 2;
+    padding-left: 1rem;
+
+}

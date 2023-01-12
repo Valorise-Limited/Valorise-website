@@ -1,30 +1,7 @@
-.homepage-intro__banner {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+@use "styles/typography" as typo;
 
-}
-
-.homepage-bg-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    z-index: -1;
-
-    &>img {
-        height: 100vh;
-        object-fit: cover;
-    }
-}
-
-.homepage-intro__writeup {
-    margin-left: 9.6rem;
-}
-
-.homepage-learnmore-button {
-    margin-top: 4.8rem;
+.large-text-writeup {
+    font-size: typo.$fz-xxl-2;
+    max-width: calc((102.6rem / 116rem) * 100%);
+    margin: 0 auto;
 }
