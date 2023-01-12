@@ -3,17 +3,13 @@
 
 
 .valorise-header {
-    // position: fixed;
-    // left: 0;
-    // right: 0;
-    // top: 0;
-    background-color: transparent;
-    // z-index: 999;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2.4rem 9.6rem;
+    position: relative;
+    margin-bottom: -10rem;
 
     // &.header-nav--scrolled {
     //     background-color: colors.$brand-white;
