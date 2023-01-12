@@ -5,17 +5,27 @@
 .wwd-article__upper-content {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
-    &>* {
-        flex: 50%;
-        max-width: 50%;
-    }
+}
+
+.wwd-article-text {
+    flex: 59.657rem;
+    max-width: 59.657rem;
+}
+
+.wwd-article__lower-content {
+    padding: 3rem 0;
 }
 
 .wwd-article-pic {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex: 40.7328rem;
+    max-width: 40.7328rem;
+    padding-left: 3.5rem;
+
 }
 
 .wwd-list {
@@ -25,6 +35,54 @@
 
 .wwd-list-item {
     line-height: 2;
-    padding-left: 1rem;
+    margin-bottom: .5rem;
+    position: relative;
 
+    &::before {
+        content: url(../../../../assets/svgs/small-dot.svg);
+        position: absolute;
+        top: -.5rem;
+        left: -1.25rem;
+    }
+
+    &:nth-child(3) {
+        width: 95%;
+    }
+
+    &:last-child {
+        width: 85%;
+    }
+
+}
+
+.services-listing {
+    display: flex;
+    align-items: center;
+
+    &>* {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+.services-list-item>figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &>img {
+        max-width: 9.6rem;
+        min-width: 8rem;
+        height: 8.193rem;
+    }
+
+    &>span {
+        margin-top: 3rem;
+        text-transform: capitalize;
+    }
+}
+
+.our-service__heading {
+    text-align: center;
+    line-height: 5;
 }

@@ -1,6 +1,10 @@
 import React from 'react';
 import discussionIllustrator from "assets/svgs/discussion-illustrator.svg";
 import "./what-we-do.scss";
+import experimentIllustratorIcon from "assets/svgs/experiment-apparatus-big-icon.svg";
+import gearIlustratorIcon from "assets/svgs/gear-big-icon.svg";
+import messageIllustratorIcon from "assets/svgs/message-big-icon.svg";
+import transportIllustratorIcon from "assets/svgs/transport-big-icon.svg"
 
 const WhatWeDo = () => {
     return (
@@ -24,7 +28,44 @@ const WhatWeDo = () => {
                         </div>
                     </div>
                     <div className='wwd-article__lower-content'>
+                        <h4 className='big-heading-4 our-service__heading'>
+                            Our Services Includes:
+                        </h4>
+                        <ul className='services-listing'>
+                            <li className='services-list-item'>
+                                <figure>
+                                    <img src={experimentIllustratorIcon} alt="experiment illustrator icon" />
+                                    <span className='text-bold-xl'>
+                                        analytical services
+                                    </span>
+                                </figure>
+                            </li>
+                            <li className='services-list-item'>
+                                <figure>
+                                    <img src={transportIllustratorIcon} alt="transport illustrator icon" />
+                                    <span className='text-bold-xl'>
+                                        transport/logistics
+                                    </span>
+                                </figure>
+                            </li>
+                            <li className='services-list-item'>
+                                <figure>
+                                    <img src={messageIllustratorIcon} alt="consultancy illustrator icon" />
+                                    <span className='text-bold-xl'>
+                                        consultancy services
+                                    </span>
+                                </figure>
+                            </li>
+                            <li className='services-list-item'>
+                                <figure>
+                                    <img src={gearIlustratorIcon} alt="processing illustrator icon" />
+                                    <span className='text-bold-xl'>
+                                        processing services
+                                    </span>
+                                </figure>
+                            </li>
 
+                        </ul>
                     </div>
                 </div>
             </article>

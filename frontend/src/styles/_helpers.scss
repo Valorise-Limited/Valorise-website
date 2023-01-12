@@ -105,8 +105,9 @@
 
 .big-heading-4 {
     font-size: typo.$fz-heading-4;
-    color: colors.$brand-dark-blue;
+    color: colors.$brand-blue;
     letter-spacing: 1.5%;
+    font-weight: 550;
 }
 
 .heading-support-text {
@@ -131,6 +132,12 @@
 
 .text-center {
     text-align: center;
+}
+
+.text-bold-xl {
+    font-size: typo.$fz-xl;
+    font-weight: 600;
+    color: colors.$brand-dark-blue;
 }
 
 .center-nested-child {
