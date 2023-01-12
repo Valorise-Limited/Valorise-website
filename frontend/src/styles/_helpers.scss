@@ -1,0 +1,105 @@
+@use "./typography" as *;
+@use "./colors" as *;
+
+.brand-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    width: 100%;
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 74rem;
+        padding: 0 1.2rem
+    }
+
+    @media (min-width: 992px) {
+        max-width: 96rem;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 116rem;
+    }
+}
+
+.brand-shadow-1 {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3),
+        0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+.brand-drop-shadow-1 {
+    filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.al-items {
+    align-items: center;
+}
+
+.js-content {
+    justify-content: space-between;
+}
+
+.js-between {
+    justify-content: space-between;
+}
+
+.js-evenly {
+    justify-content: space-evenly;
+}
+
+// .logo-size {
+//     width: 100px;
+//     height: 70px;
+// }
+
+
+.p-fixed {
+    position: fixed;
+}
+
+.bt-0 {
+    bottom: 0;
+}
+
+.lft-0 {
+    left: 0;
+}
+
+.rgt-0 {
+    right: 0;
+}
+
+//typography helpers
+.big-heading {
+    font-size: $fz-heading-1;
+    color: $brand-blue;
+    font-weight: 900;
+    letter-spacing: 1.5%;
+}
+
+.big-heading-2 {
+    font-size: $fz-heading-2;
+    font-weight: 800;
+    color: $brand-blue;
+    letter-spacing: 6%;
+}
+
+.big-heading-3 {
+    font-size: $fz-heading-3;
+    letter-spacing: 1.5%;
+}
+
+.big-heading-4 {
+    font-size: $fz-heading-4;
+    color: $brand-dark-blue;
+    letter-spacing: 1.5%;
+}

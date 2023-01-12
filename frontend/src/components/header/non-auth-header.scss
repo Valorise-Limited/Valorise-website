@@ -1,0 +1,38 @@
+@use "styles/colors" as colors;
+
+
+.valorise-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4rem 9.6rem;
+}
+
+.header-right__nav {
+    display: flex;
+    align-items: center;
+
+    &>* {
+        margin-left: 3.27rem;
+    }
+}
+
+.drop-down__select {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &>span:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1.6rem;
+    }
+}
