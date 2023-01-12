@@ -18,8 +18,25 @@
     font-style: normal;
 }
 
-/*
 
+
+@font-face {
+    font-family: 'librefranklin-extrabold';
+    src:
+        url('../assets/font/librefranklin-extrabold.ttf') format('truetype');
+
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'librefranklin-black';
+    src:
+        url('../assets/font/librefranklin-black.ttf') format('truetype');
+
+    font-style: normal;
+}
+
+/*
 Font sizes used across app;
 */
 $fz-xxs: 1.2rem;

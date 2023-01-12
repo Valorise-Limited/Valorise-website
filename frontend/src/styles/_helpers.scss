@@ -1,5 +1,6 @@
 @use "./typography" as *;
 @use "./colors" as *;
+@use "./variables" as var;
 
 .brand-container {
     margin-left: auto;
@@ -27,8 +28,7 @@
 }
 
 .brand-shadow-1 {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3),
-        0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: var.$primary-box-shadow;
 }
 
 .brand-drop-shadow-1 {
@@ -79,11 +79,13 @@
 }
 
 //typography helpers
-.big-heading {
+.big-heading-1 {
     font-size: $fz-heading-1;
+    font-family: "librefranklin-extrabold", sans-serif;
     color: $brand-blue;
     font-weight: 900;
     letter-spacing: 1.5%;
+    line-height: 7.8rem;
 }
 
 .big-heading-2 {
@@ -102,4 +104,14 @@
     font-size: $fz-heading-4;
     color: $brand-dark-blue;
     letter-spacing: 1.5%;
+}
+
+.heading-support-text {
+    font-size: $fz-xxl-2;
+    line-height: 4.8rem;
+    font-weight: 300;
+}
+
+.margin-top-64 {
+    margin-top: 6.4rem;
 }
