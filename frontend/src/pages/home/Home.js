@@ -1,6 +1,7 @@
 import React from 'react';
 import introBgImage from "assets/svgs/hero-image.svg";
 import "./home.scss";
+import BrandButton from 'components/button/BrandButton';
 
 const Home = () => {
   return (
@@ -16,11 +17,7 @@ const Home = () => {
           <p className='heading-support-text'>
             Your by-products are someone else&apos;s resources
           </p>
-          <div className='homepage-learnmore-button'>
-            <button type="button" className='primary-button primary-button--large'>
-              Learn More
-            </button>
-          </div>
+          <BrandButton buttonText={"Learn More"} elementClassName={"margin-top-64"} />
         </div>
       </section>
     </main>
