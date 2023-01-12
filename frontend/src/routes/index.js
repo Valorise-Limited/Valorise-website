@@ -1,4 +1,4 @@
-import pages from "pages";
+import { pages } from "pages";
 
 
 const {
@@ -16,9 +16,9 @@ const {
     MeetTheTeam,
     FAQ } = pages;
 
-export const authenticatedProtectedRoutes = [];
+const authenticatedProtectedRoutes = [];
 
-export const publicRoutes = [
+const publicRoutes = [
     {
         path: "/about/team", element: <MeetTheTeam />
     },
@@ -64,3 +64,8 @@ export const publicRoutes = [
     },
 
 ];
+
+export {
+    authenticatedProtectedRoutes,
+    publicRoutes
+}

@@ -1,13 +1,20 @@
-import React from 'react';
+
 import logo from "assets/svgs/valorise-logo.svg";
 import { Link } from 'react-router-dom';
 import chevronDownIcon from "assets/svgs/icon-up.svg";
 import "./non-auth-header.scss";
+import HamburgerToggleButton from 'components/button/HamburgerToggleButton';
 
-const NonAunthenticationHeader = () => {
+
+
+const NonAunthenticationHeader = ({ showHeaderBackground }) => {
+
+
+
+
   return (
 
-    <header className='valorise-header valorise-header__nonAuth '>
+    <header className={` ${showHeaderBackground ? "valorise-header valorise-header__nonAuth header-nav--scrolled" : "valorise-header__nonAuth valorise-header"}`}>
       <div className='header-left__nav' >
         <Link to="/" className='goto-home__link'>
           <img src={logo} alt="Valorise Brand Logo" />
@@ -59,6 +66,7 @@ const NonAunthenticationHeader = () => {
         </div>
 
       </nav>
+      <HamburgerToggleButton />
     </header>
 
   )

@@ -1,18 +1,29 @@
 @use "styles/colors" as colors;
+@use "styles/variables" as var;
 
 
 .valorise-header {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
+    // position: fixed;
+    // left: 0;
+    // right: 0;
+    // top: 0;
     background-color: transparent;
-    z-index: 999;
+    // z-index: 999;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2.4rem 9.6rem;
+
+    // &.header-nav--scrolled {
+    //     background-color: colors.$brand-white;
+    //     box-shadow: var.$primary-box-shadow;
+    //     transition: background-color .35s ease-in;
+    // }
+
+    @media(max-width: 1024px) {
+        padding: 2rem 4rem;
+    }
 }
 
 .header-right__nav {
@@ -21,6 +32,16 @@
 
     &>* {
         margin-left: 3.27rem;
+    }
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.goto-home__link>img {
+    @media(max-width:1024px) {
+        max-width: 10rem;
     }
 }
 
