@@ -5,10 +5,13 @@ img {
     max-width: 100%;
 }
 
+a,
+button {
+    font-family: inherit;
+    color: colors.$brand-black;
+}
 
 a {
-    color: colors.$brand-black;
-    font-family: inherit;
     text-decoration: none;
 }
 

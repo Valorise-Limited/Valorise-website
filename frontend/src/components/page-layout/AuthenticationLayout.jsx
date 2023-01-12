@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from "../header"
+import Header from 'components/header';
 
-const AuthenticationLayout = ({children}) => {
+const AuthenticationLayout = ({ children }) => {
   return (
     <div>
-        <Header />
-        <div>
-          {children}
-          </div>
+      <Header />
+      <div>
+        {children}
+      </div>
     </div>
   )
 }

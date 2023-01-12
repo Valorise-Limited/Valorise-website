@@ -11,11 +11,11 @@
     width: 100%;
 
     @media (min-width: 576px) {
-        max-width: 540px;
+        max-width: 54rem;
     }
 
     @media (min-width: 768px) {
-        max-width: 74rem;
+        max-width: 83rem;
         padding: 0 1.2rem
     }
 
@@ -57,10 +57,6 @@
     justify-content: space-evenly;
 }
 
-// .logo-size {
-//     width: 100px;
-//     height: 70px;
-// }
 
 
 .p-fixed {
@@ -81,7 +77,8 @@
 
 //typography helpers
 .big-heading-1 {
-    font-size: typo.$fz-heading-1;
+    font-size: clamp(4rem, 6vw, typo.$fz-heading-1);
+    // font-size: typo.$fz-heading-1;
     font-family: "librefranklin-extrabold", sans-serif;
     color: colors.$brand-blue;
     font-weight: 900;
@@ -108,12 +105,18 @@
     color: colors.$brand-blue;
     letter-spacing: 1.5%;
     font-weight: 550;
+
+
 }
 
 .heading-support-text {
-    font-size: typo.$fz-xxl-2;
+    font-size: clamp(3rem, 3vw, typo.$fz-xxl-2);
     line-height: 4.8rem;
     font-weight: 300;
+
+    @media(max-width: 1280px) {
+        max-width: 70rem;
+    }
 }
 
 .margin-top-64 {
@@ -144,4 +147,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.display-none {
+    display: none;
 }

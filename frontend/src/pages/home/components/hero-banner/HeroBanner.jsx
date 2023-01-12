@@ -4,6 +4,7 @@ import introBgImage from "assets/svgs/hero-image.svg";
 import "./hero-banner.scss";
 
 const HeroBanner = () => {
+
     return (
         <section className='homepage-intro__banner'>
             <div className='homepage-bg-image'>

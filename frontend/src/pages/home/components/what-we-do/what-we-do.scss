@@ -1,11 +1,23 @@
+@use "styles/typography" as typo;
+
 .wwd-article {
     padding: 6.4rem 20.2rem;
+
+    @media (max-width:1024px) {
+        padding: 1rem;
+
+
+    }
 }
 
 .wwd-article__upper-content {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+
+    @media (max-width:600px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
 }
 
@@ -25,6 +37,14 @@
     flex: 40.7328rem;
     max-width: 40.7328rem;
     padding-left: 3.5rem;
+
+    // @media (max-width:1000px) {
+    //     flex-direction: column;
+    //     align-items: flex-start;
+    //     padding: unset;
+
+
+    // }
 
 }
 
@@ -74,11 +94,21 @@
         max-width: 9.6rem;
         min-width: 8rem;
         height: 8.193rem;
+
+        @media(max-width: 992px) {
+            max-width: 7rem;
+            min-width: 5rem;
+            height: 7rem;
+        }
     }
 
     &>span {
         margin-top: 3rem;
         text-transform: capitalize;
+
+        @media(max-width: 992px) {
+            font-size: typo.$fz-md;
+        }
     }
 }
 

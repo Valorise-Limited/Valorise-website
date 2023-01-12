@@ -1,7 +1,9 @@
 @use "styles/typography" as typo;
 
 .large-text-writeup {
-    font-size: typo.$fz-xxl-2;
+    font-size: clamp(3rem, 2vw, typo.$fz-xxl-2);
     max-width: calc((102.6rem / 116rem) * 100%);
     margin: 0 auto;
+
+
 }

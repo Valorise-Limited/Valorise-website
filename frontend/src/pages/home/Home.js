@@ -3,9 +3,12 @@ import "./home.scss";
 import HeroBanner from './components/hero-banner/HeroBanner';
 import WhatWeDo from './components/what-we-do/WhatWeDo';
 
+
 const Home = () => {
+
+
   return (
-    <main className='homepage'>
+    <>
       <HeroBanner />
       <div className='largest-padding brand-container'>
         <p className='large-text-writeup line-height-xl text-center'>
@@ -13,7 +16,7 @@ const Home = () => {
         </p>
       </div>
       <WhatWeDo />
-    </main>
+    </>
   )
 }
 
