@@ -10,14 +10,14 @@ const Home = () => {
           <img src={introBgImage} alt='This represents wallpaper for valorise intro banner' />
         </div>
         <div className='homepage-intro__writeup'>
-          <h1>
+          <h1 className='big-heading-1'>
             Wealth from Waste
           </h1>
-          <p>
+          <p className='heading-support-text'>
             Your by-products are someone else&apos;s resources
           </p>
-          <div className='brand-button-orange'>
-            <button type="button">
+          <div className='homepage-learnmore-button'>
+            <button type="button" className='primary-button primary-button--large'>
               Learn More
             </button>
           </div>
