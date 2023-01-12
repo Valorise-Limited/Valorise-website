@@ -1,0 +1,36 @@
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0;
+*
+* available axes:
+
+* 'wght' (range from 200.0 to 700.0)
+
+*/
+
+@font-face {
+    font-family: 'Libre Franklin';
+    src:
+        url('../assets/font/LibreFranklin-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+/*
+
+Font sizes used across app;
+*/
+$fz-xxs: 1.2rem;
+$fz-xs: 1.3rem;
+$fz-sm: 1.4rem;
+$fz-md: 1.6rem;
+$fz-lg: 1.8rem;
+$fz-xl: 2rem;
+$fz-xxl-1: 2.2rem;
+$fz-xxl-2: 3.6rem;
+$fz-heading-1: 6.4rem;
+$fz-heading-2: 4.8rem;
+$fz-heading-3: 3.2rem;
+$fz-heading-4: 2.4rem;
