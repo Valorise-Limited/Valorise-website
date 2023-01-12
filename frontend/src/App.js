@@ -2,8 +2,9 @@ import Pages from "pages/Pages";
 
 
 function App() {
+
   return (
-    <div>
+    <div className="app-pages">
       <Pages />
     </div>
   );
