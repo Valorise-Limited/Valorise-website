@@ -3,11 +3,11 @@
   "name": "Valorise Waste Stream Business Resource Website",
   "icons": [
     {
-      "src": "valorise-logo.png",
+      "src": "valorise-logo.svg",
       "type": "image/png",
-      "sizes": "192x192",
-    },
+      "sizes": "192x192"
+    }
   ],
   "start_url": ".",
-  "display": "standalone",
+  "display": "standalone"
 }

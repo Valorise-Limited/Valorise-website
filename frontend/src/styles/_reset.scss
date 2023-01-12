@@ -1,3 +1,6 @@
+@use "./typography";
+@use "./colors" as colors;
+
 *,
 *::before,
 *::after {
@@ -7,14 +10,16 @@
 }
 
 html {
-    line-height: 1.5;
     font-size: 62.5%;
 }
 
 body {
-    background: #fffffffc;
+    background: colors.$brand-warm-grey;
+    font-family: "Libre Franklin", sans-serif;
     min-height: 100vh;
+    line-height: 1;
     font-size: 1.6rem;
+    font-weight: 200;
     color: #101010;
     scroll-behavior: smooth;
 }
