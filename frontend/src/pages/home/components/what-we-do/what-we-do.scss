@@ -1,0 +1,118 @@
+@use "styles/typography" as typo;
+
+.wwd-article {
+    padding: 6.4rem 20.2rem;
+
+    @media (max-width:1024px) {
+        padding: 1rem;
+
+
+    }
+}
+
+.wwd-article__upper-content {
+    display: flex;
+    align-items: center;
+
+    @media (max-width:600px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+.wwd-article-text {
+    flex: 59.657rem;
+    max-width: 59.657rem;
+}
+
+.wwd-article__lower-content {
+    padding: 3rem 0;
+}
+
+.wwd-article-pic {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 40.7328rem;
+    max-width: 40.7328rem;
+    padding-left: 3.5rem;
+
+    // @media (max-width:1000px) {
+    //     flex-direction: column;
+    //     align-items: flex-start;
+    //     padding: unset;
+
+
+    // }
+
+}
+
+.wwd-list {
+    padding-left: 2rem;
+    font-weight: 350;
+}
+
+.wwd-list-item {
+    line-height: 2;
+    margin-bottom: .5rem;
+    position: relative;
+
+    &::before {
+        content: url(../../../../assets/svgs/small-dot.svg);
+        position: absolute;
+        top: -.5rem;
+        left: -1.25rem;
+    }
+
+    &:nth-child(3) {
+        width: 95%;
+    }
+
+    &:last-child {
+        width: 85%;
+    }
+
+}
+
+.services-listing {
+    display: flex;
+    align-items: center;
+
+    &>* {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+.services-list-item>figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &>img {
+        max-width: 9.6rem;
+        min-width: 8rem;
+        height: 8.193rem;
+
+        @media(max-width: 992px) {
+            max-width: 7rem;
+            min-width: 5rem;
+            height: 7rem;
+        }
+    }
+
+    &>span {
+        margin-top: 3rem;
+        text-transform: capitalize;
+
+        @media(max-width: 992px) {
+            font-size: typo.$fz-md;
+        }
+    }
+}
+
+.our-service__heading {
+    text-align: center;
+    line-height: 5;
+}

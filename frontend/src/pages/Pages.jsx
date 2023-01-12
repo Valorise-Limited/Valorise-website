@@ -4,6 +4,9 @@ import { useRoutes, useLocation } from "react-router-dom";
 import { publicRoutes, authenticatedProtectedRoutes } from "routes";
 import "./pages.scss"
 
+import useElementOnScreen from "hooks/useElementOnScreen";
+import { useRef } from 'react';
+
 
 const PublicRoutesWrapper = () => {
 
@@ -21,8 +24,16 @@ const Pages = () => {
 
   const user = false;
   const location = useLocation();
+  const targetRef = useRef(null);
+
+  const showHeaderBackground = useElementOnScreen({
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.3,
+
+  }, targetRef)
   return (
-    <div className="app-pages">
+    <>
 
       {
         user ? (
@@ -31,14 +42,14 @@ const Pages = () => {
           </AuthenticationLayout>
         )
           : (
-            <NonAuthenticationLayout>
+            <NonAuthenticationLayout showHeaderBackground={showHeaderBackground}>
               <PublicRoutesWrapper key={location.pathname} />
             </NonAuthenticationLayout>
           )
       }
 
-    </div>
+    </>
   )
 }
 
-export default Pages
+export default Pages;

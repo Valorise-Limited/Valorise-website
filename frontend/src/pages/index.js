@@ -1,4 +1,4 @@
-import Home from  "./home/Home";
+import Home from "./home/Home";
 import MeetTheTeam from "./about/MeetTheTeam";
 import FAQ from "./about/FAQ";
 import Contact from "./contact/Contact";
@@ -12,7 +12,7 @@ import Processing from "./valorise-services/Processing";
 import TransportLogistics from "./valorise-services/TransportLogistics";
 import WasteRegulated from "./valorise-services/WasteRegulated";
 
-const pages = {
+export const pages = {
     Home,
     MeetTheTeam,
     MarketPlace,
@@ -27,5 +27,3 @@ const pages = {
     TransportLogistics,
     WasteRegulated
 };
-
-export default pages
