@@ -1,4 +1,13 @@
+@use "./colors" as colors;
+
 img {
     display: block;
     max-width: 100%;
+}
+
+
+a {
+    color: colors.$brand-black;
+    font-family: inherit;
+    text-decoration: none;
 }
