@@ -7,13 +7,13 @@ import Footer from "../footer/Footer"
 const NonAuthenticatedLayout = ({ children }) => {
 
   return (
-    <div>
+    <>
       <Header />
       <main className="main-block">
         {children}
       </main>
       <Footer />
-    </div>
+    </>
   )
 }
 
