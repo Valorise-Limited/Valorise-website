@@ -1,15 +1,15 @@
 import React from 'react';
 import BrandButton from 'components/button/BrandButton';
-// import introBgImage from "assets/svgs/hero-image.svg";
+import introBgImage from "assets/svgs/hero-image.svg";
 import "./hero-banner.scss";
 
 const HeroBanner = () => {
 
     return (
         <section className='homepage-intro__banner'>
-            {/* <div className='homepage-bg-image'>
-                <img src={introBgImage} alt='This represents wallpaper for valorise intro banner' />
-            </div> */}
+
+            <img className='homepage-bg-image' src={introBgImage} alt='This represents wallpaper for valorise intro banner' />
+
             <div className='homepage-intro__writeup'>
                 <h1 className='big-heading-1'>
                     Wealth from Waste.
