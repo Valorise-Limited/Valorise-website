@@ -17,7 +17,7 @@ const HeroBanner = () => {
                 <p className='heading-support-text'>
                     Your by-products are someone else&apos;s resources.
                 </p>
-                <BrandButton buttonText={"Learn More"} elementClassName={"margin-top-64"} />
+                <BrandButton buttonText={"Learn More"} elementClassName={"margin-top-64"} buttonClassName="primary-button--large" />
             </div>
         </section>
     )

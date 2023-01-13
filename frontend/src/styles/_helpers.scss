@@ -24,7 +24,7 @@
     }
 
     @media (min-width: 1200px) {
-        max-width: 116rem;
+        max-width: 120rem;
     }
 }
 
@@ -105,8 +105,7 @@
     color: colors.$brand-blue;
     letter-spacing: 1.5%;
     font-weight: 550;
-
-
+    line-height: 3;
 }
 
 .heading-support-text {
@@ -132,6 +131,7 @@
 .line-height-xl {
     line-height: 4.8rem;
 }
+
 
 .text-center {
     text-align: center;

@@ -2,7 +2,9 @@ import React from 'react';
 import "./home.scss";
 import HeroBanner from './components/hero-banner/HeroBanner';
 import WhatWeDo from './components/what-we-do/WhatWeDo';
-
+import WeHelpBusinesses from './components/we-help-businesses/WeHelpBusinesses';
+import WhatAreTheBenefits from './components/what-are-the-benefits/WhatAreTheBenefits';
+import SubscribeBanner from './components/subscription-banner/SubscribeBanner';
 
 const Home = () => {
 
@@ -16,6 +18,9 @@ const Home = () => {
         </p>
       </div>
       <WhatWeDo />
+      <WeHelpBusinesses />
+      <WhatAreTheBenefits />
+      <SubscribeBanner />
     </>
   )
 }
