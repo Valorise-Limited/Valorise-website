@@ -1,0 +1,26 @@
+.menu-toggle-block {
+    display: flex;
+    flex-direction: column;
+
+    &>button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        background-color: transparent;
+        outline: none;
+        border: 0;
+        padding: .15rem 1rem;
+
+        &>span {
+            margin-left: .5rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .menu-toggle-block {
+        display: none;
+    }
+}
