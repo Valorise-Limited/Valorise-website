@@ -29,7 +29,7 @@ const WhatWeDo = () => {
                     </div>
                     <div className='homepage-article__lower-content'>
                         <h4 className='big-heading-4 text-center'>
-                            Our Services Includes:
+                            Our Services Include:
                         </h4>
                         <ul className='services-listing'>
                             <li className='services-list-item'>
