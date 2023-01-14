@@ -45,8 +45,8 @@
     align-items: center;
 }
 
-.js-content {
-    justify-content: space-between;
+.js-center {
+    justify-content: center;
 }
 
 .js-between {
@@ -55,6 +55,11 @@
 
 .js-evenly {
     justify-content: space-evenly;
+}
+
+
+.d-grid {
+    display: grid;
 }
 
 
