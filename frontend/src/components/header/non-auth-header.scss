@@ -25,7 +25,7 @@
 .header-right__nav {
     display: flex;
     align-items: center;
-    font-weight: 300;
+
     color: colors.$brand-dark-blue;
 
     &>* {
@@ -100,11 +100,28 @@
         border: 1px solid transparent;
         outline: none;
         font-size: inherit;
+        font-weight: unset;
+        color: inherit;
 
-
+        &>span {
+            font-weight: 300;
+        }
 
         &>img {
             margin-left: 1rem;
         }
     }
+}
+
+.header-link>a {
+    font-weight: 300;
+
+}
+
+.rotate-down {
+    transform: rotate(180deg);
+}
+
+.rotate-up {
+    transform: rotate(0);
 }
