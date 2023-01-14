@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import "./footer.scss";
 import brandLogo from "assets/svgs/valorise-logo.svg";
