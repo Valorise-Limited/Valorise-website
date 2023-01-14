@@ -40,7 +40,7 @@ const TeamsSection = () => {
         <div className="d-flex js-center">
             {founders?.map((founder, index) => (
                 <figure key={index}>
-                    <img src={founder.avatar} alt="" />
+                    <img src={founder.avatar} className="avatar" loading="lazy" alt="" />
                     <figcaption>
                         <h5>{founder.full_name}</h5>
                         <p>{founder.position}</p>
@@ -61,9 +61,9 @@ const TeamsSection = () => {
         <h5>Development Team</h5>
         <p>The creation of the site would not have been possible without the hard work and dedication of our team. Valorise Limited is proud to work with SkilledUp Life and provide career development opportunities to its members.</p>
         <div className="d-flex js-center">
-        {devTeams?.map((team, index) => (
+            {devTeams?.map((team, index) => (
                 <figure key={index}>
-                    <img src={team.avatar} alt="" />
+                    <img src={team.avatar} className="avatar" loading="lazy" alt="" />
                     <figcaption>
                         <h5>{team.full_name}</h5>
                         <p>{team.position}</p>
