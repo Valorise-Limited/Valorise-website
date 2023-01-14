@@ -16,7 +16,7 @@ const SubscribeBanner = () => {
         <form className='subscribe-form'>
           <div className='subscribe-form__input-block'>
             <img src={envelopeIcon} alt='This represents a message icon' />
-            <input placeholder='jon.doe@email.com' />
+            <input placeholder='jon.doe@email.com' type="text" />
           </div>
           <div className='subscribe-form-button'>
             <BrandButton buttonText="Sign Up" />
