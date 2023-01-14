@@ -5,9 +5,18 @@ img {
     max-width: 100%;
 }
 
+a,
+button {
+    font-family: inherit;
+    color: colors.$brand-black;
+    cursor: pointer;
+}
 
 a {
-    color: colors.$brand-black;
-    font-family: inherit;
     text-decoration: none;
+}
+
+ul li,
+ol li {
+    list-style: none;
 }

@@ -1,0 +1,53 @@
+@use "styles/typography" as typo;
+@use "styles/colors" as colors;
+
+.case-studies__listing {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 3rem;
+}
+
+.card-image-block {
+    display: flex;
+    flex-direction: column;
+
+
+    &>img {
+        height: 100%;
+    }
+}
+
+.card {
+
+    max-width: 31.3rem;
+    padding: 1rem 1.5rem;
+
+
+    .card-inner {
+
+        overflow: hidden;
+        border-radius: 1.6rem;
+        height: 100%;
+        background-color: colors.$brand-sea-green-light;
+
+    }
+
+
+}
+
+.card-text {
+
+    padding: 1.5rem;
+}
+
+
+
+.card-text>p {
+    font-size: typo.$fz-sm;
+    margin-top: 1rem;
+}
+
+.case-studies__btn-block {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,32 @@
+.homepage-intro__banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.homepage-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    height: 100%;
+
+    &>img {
+        height: 100%;
+        width: 100vw;
+        object-fit: cover;
+    }
+}
+
+.homepage-intro__writeup {
+    padding-left: 10rem;
+    font-weight: 300;
+    width: 100%;
+}
+
+.homepage-learnmore-button {
+    margin-top: 4.8rem;
+}

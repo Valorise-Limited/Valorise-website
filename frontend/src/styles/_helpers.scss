@@ -1,5 +1,7 @@
-@use "./typography" as *;
-@use "./colors" as *;
+@use "./typography" as typo;
+@use "./colors" as colors;
+@use "./variables" as var;
+
 
 .brand-container {
     margin-left: auto;
@@ -9,11 +11,11 @@
     width: 100%;
 
     @media (min-width: 576px) {
-        max-width: 540px;
+        max-width: 54rem;
     }
 
     @media (min-width: 768px) {
-        max-width: 74rem;
+        max-width: 83rem;
         padding: 0 1.2rem
     }
 
@@ -22,13 +24,12 @@
     }
 
     @media (min-width: 1200px) {
-        max-width: 116rem;
+        max-width: 120rem;
     }
 }
 
 .brand-shadow-1 {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3),
-        0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: var.$primary-box-shadow;
 }
 
 .brand-drop-shadow-1 {
@@ -56,10 +57,6 @@
     justify-content: space-evenly;
 }
 
-// .logo-size {
-//     width: 100px;
-//     height: 70px;
-// }
 
 
 .p-fixed {
@@ -79,27 +76,79 @@
 }
 
 //typography helpers
-.big-heading {
-    font-size: $fz-heading-1;
-    color: $brand-blue;
+.big-heading-1 {
+    font-size: clamp(4rem, 6vw, typo.$fz-heading-1);
+    // font-size: typo.$fz-heading-1;
+    font-family: "librefranklin-extrabold", sans-serif;
+    color: colors.$brand-blue;
     font-weight: 900;
     letter-spacing: 1.5%;
+    line-height: 7.8rem;
 }
 
 .big-heading-2 {
-    font-size: $fz-heading-2;
+    font-size: typo.$fz-heading-2;
     font-weight: 800;
-    color: $brand-blue;
+    color: colors.$brand-blue;
     letter-spacing: 6%;
 }
 
 .big-heading-3 {
-    font-size: $fz-heading-3;
+    font-size: typo.$fz-heading-3;
     letter-spacing: 1.5%;
+    color: colors.$brand-blue;
+    line-height: 3;
 }
 
 .big-heading-4 {
-    font-size: $fz-heading-4;
-    color: $brand-dark-blue;
+    font-size: typo.$fz-heading-4;
+    color: colors.$brand-blue;
     letter-spacing: 1.5%;
+    font-weight: 550;
+    line-height: 3;
+}
+
+.heading-support-text {
+    font-size: clamp(3rem, 3vw, typo.$fz-xxl-2);
+    line-height: 8rem;
+    font-weight: 300;
+
+    @media(max-width: 1280px) {
+        max-width: 70rem;
+    }
+}
+
+.margin-top-64 {
+    margin-top: 6.4rem;
+}
+
+.largest-padding {
+    padding: 6rem 0 6.4rem;
+}
+
+
+
+.line-height-xl {
+    line-height: 4.8rem;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold-xl {
+    font-size: typo.$fz-xl;
+    font-weight: 600;
+    color: colors.$brand-dark-blue;
+}
+
+.center-nested-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-none {
+    display: none;
 }

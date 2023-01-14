@@ -16,10 +16,11 @@ html {
 body {
     background: colors.$brand-warm-grey;
     font-family: "Libre Franklin", sans-serif;
-    min-height: 100vh;
-    line-height: 1;
+
+    line-height: 1.5;
     font-size: 1.6rem;
     font-weight: 200;
-    color: #101010;
+    color: colors.$primary-black;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
