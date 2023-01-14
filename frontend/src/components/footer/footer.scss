@@ -149,8 +149,8 @@
     align-items: center;
     margin-top: 3rem;
 
-    &>*:first-child {
-        margin-right: 2rem;
+    &>* {
+        margin-left: 2rem;
     }
 
     &>span {

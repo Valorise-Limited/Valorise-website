@@ -1,0 +1,121 @@
+@use "styles/colors" as colors;
+@use "styles/typography" as typo;
+
+.valorise-contacts {
+    padding: 0 1rem;
+
+}
+
+.valorise-contact-item {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+
+    &>* {
+        margin-left: 2rem;
+    }
+
+    &>span {
+        font-weight: 350;
+    }
+
+}
+
+.valorise-contact__heading {
+    font-weight: 500;
+    color: colors.$brand-blue;
+}
+
+.contact-content__block {
+    display: flex;
+    justify-content: space-around;
+    padding: 6rem 0;
+}
+
+.contact-writeup {
+    max-width: 95rem;
+    padding-top: 8rem;
+}
+
+.brand-input {
+    display: flex;
+    flex-direction: column;
+    height: 4.8rem;
+    border: 1px solid colors.$primary-grey;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 1.6rem;
+
+
+    &>input {
+        background-color: colors.$brand-white;
+        border: 1px solid transparent;
+        height: 100%;
+        padding: 8px 16px;
+        font-size: inherit;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &::placeholder {
+            font-weight: 300;
+        }
+    }
+}
+
+.brand-input-textarea {
+    height: 20.8rem;
+
+    &>textarea {
+        height: 100%;
+        resize: none;
+        border: 1px solid transparent;
+        padding: 8px 16px;
+        font-size: inherit;
+        font-weight: 300;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+}
+
+.contact-form {
+    flex: 60.6rem;
+    max-width: 60.6rem;
+    background-color: colors.$brand-sea-green-light;
+    border-radius: 1.6rem;
+
+    &__inner-block {
+        padding: 3rem;
+    }
+}
+
+.contact-form__control:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.valorise-contact-listing:not(:first-child) {
+    margin-top: 3rem;
+}
+
+// .contact-main-block {}
+
+.rectangular-banner-3 {
+    height: 30.8rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: -1;
+
+    &>img {
+        height: 30.8rem;
+    }
+}
+
+.banner-text-big {
+    position: absolute;
+    top: 18rem;
+    left: 10rem;
+}
