@@ -20,6 +20,7 @@
     font-weight: 450;
     transition: background-color .15s ease-in;
     padding: 1.6rem 4.5rem;
+    text-transform: capitalize;
 
     &:hover {
         background-color: darken(colors.$brand-orange, 10);
