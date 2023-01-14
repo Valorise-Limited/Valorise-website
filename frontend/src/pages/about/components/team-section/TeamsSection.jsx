@@ -1,16 +1,16 @@
-import linkedin_icon from '../../../../assets/svgs/brand-blue-linkedin-icon.svg'
-import message_icon from '../../../../assets/svgs/brand-blue-message-icon.svg'
-import catherine from '../../../../assets/svgs/catherine.svg'
-import james from '../../../../assets/svgs/james.svg'
-import graham from '../../../../assets/svgs/graham.svg'
-import laura from '../../../../assets/svgs/laura.svg'
-import abdul from '../../../../assets/images/abdul.png'
-import mehran from '../../../../assets/images/mehran.png'
-import gaynor from '../../../../assets/svgs/gaynor.svg'
-import sam from '../../../../assets/svgs/sam.svg'
-import hauwa from '../../../../assets/images/hauwa.png'
-import obinna from '../../../../assets/images/obinna.png'
-import philip from '../../../../assets/images/philip.png'
+import linkedin_icon from 'assets/svgs/brand-blue-linkedin-icon.svg'
+import message_icon from 'assets/svgs/brand-blue-message-icon.svg'
+import catherine from 'assets/svgs/catherine.svg'
+import james from 'assets/svgs/james.svg'
+import graham from 'assets/svgs/graham.svg'
+import laura from 'assets/svgs/laura.svg'
+import abdul from 'assets/images/abdul.png'
+import mehran from 'assets/images/mehran.png'
+import gaynor from 'assets/svgs/gaynor.svg'
+import sam from 'assets/svgs/sam.svg'
+import hauwa from 'assets/images/hauwa.png'
+import obinna from 'assets/images/obinna.png'
+import philip from 'assets/images/philip.png'
 import "./team-section.scss"
 
 const TeamsSection = () => {
@@ -34,16 +34,16 @@ const TeamsSection = () => {
   return (
     <section className="aboutpage-team__section">
         {/* Founders */}
-        <h3>Meet the Team</h3>
-        <h5>Founders</h5>
+        <h3 className="big-heading-3">Meet the Team</h3>
+        <h5 className="big-heading-5">Founders</h5>
         <p>The Valorise initiative is led by a team of thoughtful leaders at the cutting edge of the emerging agri-food by-product (AFBF) industry</p>
         <div className="d-flex js-center">
             {founders?.map((founder, index) => (
                 <figure key={index}>
                     <img src={founder.avatar} className="avatar" loading="lazy" alt="" />
                     <figcaption>
-                        <h5>{founder.full_name}</h5>
-                        <p>{founder.position}</p>
+                        <h5 className='big-heading-5'>{founder.full_name}</h5>
+                        <p className='large-caption'>{founder.position}</p>
                         <div>
                             <a href={founder.email} target="_blank" rel="noopener noreferrer">
                                 <img src={message_icon} alt="" />
@@ -58,15 +58,15 @@ const TeamsSection = () => {
         </div>
         
         {/* Development team */}
-        <h5>Development Team</h5>
+        <h5 className="big-heading-5">Development Team</h5>
         <p>The creation of the site would not have been possible without the hard work and dedication of our team. Valorise Limited is proud to work with SkilledUp Life and provide career development opportunities to its members.</p>
         <div className="d-flex js-center">
             {devTeams?.map((team, index) => (
                 <figure key={index}>
                     <img src={team.avatar} className="avatar" loading="lazy" alt="" />
                     <figcaption>
-                        <h5>{team.full_name}</h5>
-                        <p>{team.position}</p>
+                        <h5 className='big-heading-5'>{team.full_name}</h5>
+                        <p className='large-caption'>{team.position}</p>
                         <div>
                             <a href={team.email} target="_blank" rel="noopener noreferrer">
                                 <img src={message_icon} alt="" />

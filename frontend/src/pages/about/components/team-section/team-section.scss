@@ -1,21 +1,7 @@
 @use "styles/colors" as colors;
 
 .aboutpage-team__section {
-    padding: 6.4rem 9.6rem 0 9.6rem;
-    h3 {
-        font-size: 32px;
-        line-height: 40px;
-        letter-spacing: 1.5%;
-        margin-bottom: 24px;
-        color: colors.$brand-blue;
-    }
-    h5 {
-        font-size: 20px;
-        line-height: 30px;
-        letter-spacing: 1.5%;
-        margin-bottom: 16px;
-        color: colors.$brand-dark-blue;
-    }
+    padding: 0 9.6rem 0 9.6rem;
 
     @media (max-width:1024px) {
         padding: 1rem;
@@ -43,10 +29,6 @@
             padding: 16px;
             border-bottom-left-radius: 16px;
             border-bottom-right-radius: 16px;
-            h5 {
-                margin-top: 0;
-                margin-bottom: 4px;
-            }
             div {
                 margin-top: 20px;
                 display: flex;
@@ -54,6 +36,7 @@
                 align-items: center;
             }
         }
+        
         @media (min-width: 768px) {
             width: 250px;
             margin: 0;
