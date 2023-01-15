@@ -125,13 +125,13 @@ const Footer = () => {
             @2022 Valorise Limited. All Rights Reserved
           </span>
           <span className="footer-lower-navs">
-            <Link to="/contact-us">
+            <Link to="/contact">
               Contact Us
             </Link>
-            <Link to="/terms">
+            <Link to="/legal/terms">
               Terms Of Use
             </Link>
-            <Link to="/privacy">
+            <Link to="/legal/privacy-policy">
               Privacy Policy
             </Link>
           </span>

@@ -1,0 +1,18 @@
+.climate-banner {
+    height: 30.8rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: -1;
+
+    &>img {
+        height: 30.8rem;
+        object-fit: cover;
+    }
+}
+
+.banner-text-big {
+    position: absolute;
+    top: 18rem;
+    left: 10rem;
+}
