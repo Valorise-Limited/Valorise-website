@@ -1,0 +1,17 @@
+.aboutpage-header__banner {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../../../../assets/svgs/header-image.svg");
+    object-fit: cover;
+}
+
+.aboutpage-header__title {
+    margin-top: 10rem;
+    padding-left: 1rem;
+    font-weight: 300;
+    width: 100%;
+    @media (min-width: 1024px) {
+        padding-left: 10rem;
+    }
+}
