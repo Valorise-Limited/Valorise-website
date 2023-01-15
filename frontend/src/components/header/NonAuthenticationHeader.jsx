@@ -62,7 +62,7 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
             aboutDropdownActive ? (<div className='drop-down__items'>
               <ul>
                 <li>
-                  <Link to="/about-us">About Us</Link>
+                  <Link to="/about/team">About Us</Link>
                 </li>
                 <li>
                   <Link to="/events">Events</Link>
