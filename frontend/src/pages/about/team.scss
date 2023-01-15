@@ -1,0 +1,16 @@
+@use "styles/typography" as typo;
+@use "styles/colors" as colors;
+
+.large-text-writeup {
+    font-size: clamp(3rem, 4vw, typo.$fz-xxl-2);
+    max-width: calc((102.6rem / 120rem) * 100%);
+    margin: 0 auto;
+}
+
+.aboutpage-edi__section {
+    padding: 0 9.6rem 0 9.6rem;
+
+    @media (max-width:1024px) {
+        padding: 1rem;
+    }
+}

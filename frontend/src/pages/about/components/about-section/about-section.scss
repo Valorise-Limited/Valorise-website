@@ -1,0 +1,22 @@
+@use "styles/colors" as colors;
+
+.aboutpage-about__section {
+    padding: 0 9.6rem 0 9.6rem;
+
+    @media (max-width:1024px) {
+        padding: 1rem;
+    }
+}
+
+.d-flex {
+    flex-flow: column;
+    gap: 48px;
+
+    @media (min-width: 1024px) {
+        flex-flow: row;
+        gap: 48px;
+        p {
+            flex: 1;  
+        }
+    }
+}
