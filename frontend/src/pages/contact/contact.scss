@@ -101,21 +101,3 @@
 }
 
 // .contact-main-block {}
-
-.rectangular-banner-3 {
-    height: 30.8rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: -1;
-
-    &>img {
-        height: 30.8rem;
-    }
-}
-
-.banner-text-big {
-    position: absolute;
-    top: 18rem;
-    left: 10rem;
-}

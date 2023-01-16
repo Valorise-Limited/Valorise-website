@@ -11,7 +11,7 @@ import Consultancy from "./valorise-services/Consultancy";
 import Processing from "./valorise-services/Processing";
 import TransportLogistics from "./valorise-services/TransportLogistics";
 import WasteRegulated from "./valorise-services/WasteRegulated";
-
+import PrivacyPolicy from "./legal/PrivacyPolicy";
 export const pages = {
     Home,
     MeetTheTeam,
@@ -25,5 +25,6 @@ export const pages = {
     Consultancy,
     Processing,
     TransportLogistics,
-    WasteRegulated
+    WasteRegulated,
+    PrivacyPolicy
 };
