@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import "./footer.scss";
 import brandLogo from "assets/svgs/valorise-logo.svg";
@@ -21,10 +20,10 @@ const Footer = () => {
                 <li className="footer-site-links">
                   <span className="footer-site-map__heading">About</span>
                   <span className="footer-links-group">
-                    <Link to="/about-us">
+                    <Link to="/about/team">
                       About Us
                     </Link>
-                    <Link to="/events">
+                    <Link to="/about/events">
                       Events
                     </Link>
                   </span>
@@ -35,7 +34,7 @@ const Footer = () => {
                     <Link to="/services/analytical">
                       Analytical Services
                     </Link>
-                    <Link to="/services/logistics">
+                    <Link to="/services/transport">
                       Transport/Logistics
                     </Link>
                     <Link to="/services/consultancy">
@@ -126,13 +125,13 @@ const Footer = () => {
             @2022 Valorise Limited. All Rights Reserved
           </span>
           <span className="footer-lower-navs">
-            <Link to="/contact-us">
+            <Link to="/contact">
               Contact Us
             </Link>
-            <Link to="/terms">
+            <Link to="#">
               Terms Of Use
             </Link>
-            <Link to="/privacy">
+            <Link to="/legal/privacy-policy">
               Privacy Policy
             </Link>
           </span>

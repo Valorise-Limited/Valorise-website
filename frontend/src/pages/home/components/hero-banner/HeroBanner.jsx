@@ -8,7 +8,7 @@ const HeroBanner = () => {
     return (
         <section className='homepage-intro__banner'>
 
-            <img className='homepage-bg-image' src={introBgImage} alt='This represents wallpaper for valorise intro banner' />
+            <img className='homepage-bg-image full-bleed' src={introBgImage} alt='This represents wallpaper for valorise intro banner' />
 
             <div className='homepage-intro__writeup'>
                 <h1 className='big-heading-1'>

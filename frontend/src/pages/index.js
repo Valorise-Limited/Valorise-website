@@ -1,16 +1,20 @@
-import Home from "./home/Home";
-import MeetTheTeam from "./about/MeetTheTeam";
-import FAQ from "./about/FAQ";
-import Contact from "./contact/Contact";
-import MarketPlace from "./market-place/MarketPlace";
-import Blog from "./resources/Blog";
-import CaseStudies from "./resources/CaseStudies";
-import News from "./resources/News";
-import Analytical from "./valorise-services/Analytical";
-import Consultancy from "./valorise-services/Consultancy";
-import Processing from "./valorise-services/Processing";
-import TransportLogistics from "./valorise-services/TransportLogistics";
-import WasteRegulated from "./valorise-services/WasteRegulated";
+import { lazy } from "react";
+
+const Home = lazy(() => import("./home/Home"));
+const Contact = lazy(() => import("./contact/Contact"));
+const MarketPlace = lazy(() => import("./market-place/MarketPlace"));
+const Blog = lazy(() => import("./resources/Blog"));
+const CaseStudies = lazy(() => import("./resources/CaseStudies"));
+const News = lazy(() => import("./resources/News"));
+const Analytical = lazy(() => import("./valorise-services/Analytical"));
+const Consultancy = lazy(() => import("./valorise-services/Consultancy"));
+const Processing = lazy(() => import("./valorise-services/Processing"));
+const TransportLogistics = lazy(() => import("./valorise-services/TransportLogistics"));
+const WasteRegulated = lazy(() => import("./valorise-services/WasteRegulated"));
+const PrivacyPolicy = lazy(() => import("./legal/PrivacyPolicy"));
+const Events = lazy(() => import("./about/Events"));
+const FAQ = lazy(() => import("./about/FAQ"));
+const MeetTheTeam = lazy(() => import("./about/MeetTheTeam"));
 
 export const pages = {
     Home,
@@ -25,5 +29,7 @@ export const pages = {
     Consultancy,
     Processing,
     TransportLogistics,
-    WasteRegulated
+    WasteRegulated,
+    PrivacyPolicy,
+    Events
 };

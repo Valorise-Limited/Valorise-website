@@ -5,6 +5,10 @@
     background-image: url(../../../../assets/images/subscribe-bg-image.png);
 }
 
+.subscribe-banner--transparent {
+    background-image: none;
+}
+
 .subscribe-banner__inner {
     display: flex;
     flex-direction: column;

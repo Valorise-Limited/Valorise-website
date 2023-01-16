@@ -62,10 +62,10 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
             aboutDropdownActive ? (<div className='drop-down__items'>
               <ul>
                 <li>
-                  <Link to="/about-us">About Us</Link>
+                  <Link to="/about/team">About Us</Link>
                 </li>
                 <li>
-                  <Link to="/events">Events</Link>
+                  <Link to="/about/events">Events</Link>
                 </li>
               </ul>
             </div>) : null
@@ -85,7 +85,7 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
                   <Link to="/services/analytical">Analytical Services</Link>
                 </li>
                 <li>
-                  <Link to="/services/logistics">Transport | Logistics</Link>
+                  <Link to="/services/transport">Transport | Logistics</Link>
                 </li>
                 <li>
                   <Link to="/services/consultancy">Consultancy Services</Link>
@@ -123,7 +123,7 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
           }
         </div>
         <div className='header-link'>
-          <Link to="/market-place">
+          <Link to="/marketplace">
             Marketplace
           </Link>
         </div>

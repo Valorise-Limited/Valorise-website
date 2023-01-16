@@ -28,6 +28,19 @@
     }
 }
 
+.brand-container-2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    width: 100%;
+
+
+    @media (min-width: 1200px) {
+        max-width: 82.4rem;
+    }
+}
+
 .brand-shadow-1 {
     box-shadow: var.$primary-box-shadow;
 }
@@ -45,8 +58,8 @@
     align-items: center;
 }
 
-.js-content {
-    justify-content: space-between;
+.js-center {
+    justify-content: center;
 }
 
 .js-between {
@@ -74,6 +87,16 @@
 .rgt-0 {
     right: 0;
 }
+
+//font-weight
+.font-350 {
+    font-weight: 350;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
 
 //typography helpers
 .big-heading-1 {
@@ -108,6 +131,14 @@
     line-height: 3;
 }
 
+.big-heading-5 {
+    font-size: typo.$fz-heading-5;
+    color: colors.$brand-dark-blue;
+    letter-spacing: 1.5%;
+    font-weight: 500;
+    line-height: 2;
+}
+
 .heading-support-text {
     font-size: clamp(3rem, 3vw, typo.$fz-xxl-2);
     line-height: 8rem;
@@ -116,6 +147,14 @@
     @media(max-width: 1280px) {
         max-width: 70rem;
     }
+}
+
+.large-caption {
+    font-size: typo.$fz-sm;
+    color: colors.$primary-grey;
+    letter-spacing: 0;
+    font-weight: 550;
+    line-height: 2;
 }
 
 .margin-top-64 {
@@ -152,3 +191,53 @@
 .display-none {
     display: none;
 }
+
+.form-label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: typo.$fz-sm;
+    color: colors.$brand-dark-blue;
+    text-transform: capitalize;
+    font-family: inherit;
+    line-height: 2.4rem;
+}
+
+.full-bleed {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+/**
+ * FLUID TYPE
+ *
+ * Scale text based on viewport and the following variables. Props should be unitless, but will be converted
+ * to REM units. E.G '1' will be converted to '1rem'
+ *
+ * --fluid-type-min-size: The smallest font size. Default 1
+ * --fluid-type-max-size: The largest font size: Default 2
+ * --fluid-type-min-screen: The smallest viewport size that this works for: Default 20
+ * --fluid-type-max-screen: The largest viewport size that this works for: Default 88
+ */
+.fluid-type {
+    --fluid-type-min-size: 1;
+    --fluid-type-max-size: 2;
+    --fluid-type-min-screen: 20;
+    --fluid-type-max-screen: 88;
+
+    /* We multiply by 1rem to essentially stick a rem unit to a number. */
+    font-size: calc((var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) / (var(--fluid-type-max-screen) - var(--fluid-type-min-screen)));
+}
+
+/*
+* SET LOCKS ON ELEMENTS
+*/
+// h1.fluid-type {
+//     --fluid-type-min-size: 2;
+//     --fluid-type-max-size: 4;
+// }
+
+// h2.fluid-type {
+//     --fluid-type-min-size: 1.5;
+//     --fluid-type-max-size: 2.2;
+// }

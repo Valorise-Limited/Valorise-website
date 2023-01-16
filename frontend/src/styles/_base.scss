@@ -6,8 +6,15 @@ img {
 }
 
 a,
-button {
+button,
+textarea,
+input {
     font-family: inherit;
+}
+
+a,
+button {
+
     color: colors.$brand-black;
     cursor: pointer;
 }
