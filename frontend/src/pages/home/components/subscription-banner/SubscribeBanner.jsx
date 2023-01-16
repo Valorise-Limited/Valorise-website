@@ -3,11 +3,11 @@ import BrandButton from 'components/button/BrandButton';
 import "./subscribe-banner.scss";
 import envelopeIcon from "assets/svgs/envelope.svg"
 
-const SubscribeBanner = () => {
+const SubscribeBanner = ({ className = null, headingText = "Ocassionally, we send news, and updates." }) => {
   return (
-    <section className='subscribe-banner'>
+    <section className={`subscribe-banner ${className}`}>
       <article className='subscribe-banner__inner'>
-        <h4 className='big-heading-4 text-center'>Ocassionally, we send news, and updates.</h4>
+        <h4 className='big-heading-4 text-center'>{headingText}</h4>
         <p className='subscribe-consent'>
           <span>
             Please enter your email address if you'd like to subscribe.</span>

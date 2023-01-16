@@ -15,13 +15,17 @@ const {
     WasteRegulated,
     MeetTheTeam,
     PrivacyPolicy,
-    FAQ } = pages;
+    FAQ,
+    Events } = pages;
 
 const authenticatedProtectedRoutes = [];
 
 const publicRoutes = [
     {
         path: "/about/team", element: <MeetTheTeam />
+    },
+    {
+        path: "/about/events", element: <Events />
     },
     {
         path: "/about/faq", element: <FAQ />
