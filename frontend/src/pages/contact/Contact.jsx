@@ -1,7 +1,7 @@
 import React from 'react';
 import "./contact.scss";
-import bgImgThree from "assets/images/brand-bg-image-3.png";
 import BrandButton from 'components/button/BrandButton';
+import ClimateBanner from 'components/climate-banner/ClimateBanner';
 import linkedInBlueIcon from "assets/svgs/brand-blue-linkedin-icon.svg";
 import msgBlueIcon from "assets/svgs/brand-blue-message-icon.svg";
 import locationBlueIcon from "assets/svgs/brand-blue-location-icon.svg";
@@ -15,11 +15,7 @@ const Contact = () => {
     return (
         <div className='contact-main-block'>
             <article className='contact-content'>
-                <div className='rectangular-banner-3'>
-                    <img src={bgImgThree} alt="This is a brand layout avatar" />
-
-                </div>
-                <h2 className='big-heading-2 banner-text-big'>Contact</h2>
+                <ClimateBanner bannerHeadingText="Contact" />
                 <main className='brand-container'>
                     <p className='large-text-writeup line-height-xl text-center contact-writeup'>
                         Contact us in confidence, to discuss your needs and how Valorise can help you on your journey to circularity and increase sustainability.

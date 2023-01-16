@@ -28,6 +28,19 @@
     }
 }
 
+.brand-container-2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    width: 100%;
+
+
+    @media (min-width: 1200px) {
+        max-width: 82.4rem;
+    }
+}
+
 .brand-shadow-1 {
     box-shadow: var.$primary-box-shadow;
 }
@@ -75,6 +88,16 @@
     right: 0;
 }
 
+//font-weight
+.font-350 {
+    font-weight: 350;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+
 //typography helpers
 .big-heading-1 {
     font-size: clamp(4rem, 6vw, typo.$fz-heading-1);
@@ -112,7 +135,7 @@
     font-size: typo.$fz-heading-5;
     color: colors.$brand-dark-blue;
     letter-spacing: 1.5%;
-    font-weight: 550;
+    font-weight: 500;
     line-height: 2;
 }
 
