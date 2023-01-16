@@ -8,6 +8,7 @@ import React from "react";
 import useElementOnScreen from "hooks/useElementOnScreen";
 import { useRef } from 'react';
 import Loader from "components/loader/Loader";
+import GoToTop from "components/go-to-top/GoToTop";
 
 
 const PublicRoutesWrapper = () => {
@@ -47,6 +48,7 @@ const Pages = () => {
 
             <NonAuthenticationLayout showHeaderBackground={showHeaderBackground}>
               <PublicRoutesWrapper key={location.pathname} />
+              <GoToTop />
             </NonAuthenticationLayout>
 
           )
