@@ -1,8 +1,17 @@
-import React from 'react'
+import React from 'react';
+import ClimateBanner from 'components/climate-banner/ClimateBanner';
+import ComingSoon from 'components/coming-soon/ComingSoon';
+import "./blog.scss"
+
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <div className='blog'>
+      <ClimateBanner bannerHeadingText="Blog" />
+
+      <ComingSoon />
+
+    </div>
   )
 }
 
