@@ -20,10 +20,10 @@ const Footer = () => {
                 <li className="footer-site-links">
                   <span className="footer-site-map__heading">About</span>
                   <span className="footer-links-group">
-                    <Link to="/about-us">
+                    <Link to="/about/team">
                       About Us
                     </Link>
-                    <Link to="/events">
+                    <Link to="/about/events">
                       Events
                     </Link>
                   </span>
@@ -34,7 +34,7 @@ const Footer = () => {
                     <Link to="/services/analytical">
                       Analytical Services
                     </Link>
-                    <Link to="/services/logistics">
+                    <Link to="/services/transport">
                       Transport/Logistics
                     </Link>
                     <Link to="/services/consultancy">
