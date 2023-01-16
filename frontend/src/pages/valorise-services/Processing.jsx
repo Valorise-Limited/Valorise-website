@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import ClimateBanner from 'components/climate-banner/ClimateBanner';
+import ComingSoon from 'components/coming-soon/ComingSoon';
 
 const Processing = () => {
   return (
-    <div>Processing</div>
+    <div>
+      <ClimateBanner bannerHeadingText="Processing Services" />
+
+      <ComingSoon />
+    </div>
   )
 }
 
