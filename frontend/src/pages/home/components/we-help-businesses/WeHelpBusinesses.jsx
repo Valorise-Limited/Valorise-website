@@ -30,7 +30,7 @@ const WeHelpBusinesses = () => {
                             <p className='market-value text-center'>
                                 Our marketplace provides a platform to link agri-food by-product generators with businesses looking for sustainable sources of materials. It also enables you to advertise your sustainable products and services.
                             </p>
-                            <BrandButton buttonText={"Learn More"} />
+                            <BrandButton buttonText={"Learn More"} isLink={true} linkURL={"//facebook.com"} />
                         </div>
                     </div>
                 </div>
