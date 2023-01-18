@@ -45,6 +45,6 @@ export const devTeams = [
         avatar: philip, full_name: "Philip Oyelegbin", position: "Frontend Engineer", summary: "Philip is a React Developer and a Robotics Instructor based in Lagos, Nigeria. He graduated from Yaba College of Technology with a degree in Industrial Maintenance Engineering. He is passionate about creating digital solutions.", email: "mailto: philipoyelegbin@gmail.com", linkedin: "//linkedin.com/in/philipoyelegbin"
     },
     {
-        avatar: obinna, full_name: "Obinna Uko Ofe", position: "Software Engineer", summary: "", email: "mailto: ", linkedin: "//linkedin.com/in/obinna-ofe-8b07a8124"
+        avatar: obinna, full_name: "Obinna Uko Ofe", position: "Software Engineer", summary: "", email: "mailto: obinnaukoofe@gmail.com", linkedin: "//linkedin.com/in/obinna-ofe-8b07a8124"
     }
 ]
