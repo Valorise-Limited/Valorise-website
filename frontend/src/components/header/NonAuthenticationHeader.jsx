@@ -54,7 +54,7 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
             <button type="button" onClick={(e) => dropdownHandler(e)} name="about-dropdown-select">
               <span>About</span>
 
-              <img src={chevronDownIcon} alt="Icon represent user guide to see more hidden information" />
+              <img src={chevronDownIcon} alt="Icon represent user guide to see more hidden information" className={`${aboutDropdownActive ? "rotate-down" : "rotate-up"}`} />
             </button>
 
           </div>
@@ -65,7 +65,7 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
                   <Link to="/about/team">About Us</Link>
                 </li>
                 <li>
-                  <Link to="/events">Events</Link>
+                  <Link to="/about/events">Events</Link>
                 </li>
               </ul>
             </div>) : null
@@ -75,7 +75,7 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
           <div className='drop-down__select'>
             <button type="button" onClick={(e) => dropdownHandler(e)} name="services-dropdown-select">
               <span>Services</span>
-              <img src={chevronDownIcon} alt="Icon represent user guide to see more hidden information" />
+              <img src={chevronDownIcon} alt="Icon represent user guide to see more hidden information" className={`${servicesDropdownActive ? "rotate-down" : "rotate-up"}`} />
             </button>
           </div>
           {
@@ -85,7 +85,7 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
                   <Link to="/services/analytical">Analytical Services</Link>
                 </li>
                 <li>
-                  <Link to="/services/logistics">Transport | Logistics</Link>
+                  <Link to="/services/transport">Transport | Logistics</Link>
                 </li>
                 <li>
                   <Link to="/services/consultancy">Consultancy Services</Link>
@@ -102,7 +102,7 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
             <button type="button" onClick={(e) => dropdownHandler(e)} name="resources-dropdown-select">
               <span>Resources</span>
 
-              <img src={chevronDownIcon} alt="Icon represent user guide to see more hidden information" />
+              <img src={chevronDownIcon} alt="Icon represent user guide to see more hidden information" className={`${resourcesDropdownActive ? "rotate-down" : "rotate-up"}`} />
             </button>
 
           </div>
@@ -123,7 +123,7 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
           }
         </div>
         <div className='header-link'>
-          <Link to="/market-place">
+          <Link to="/marketplace">
             Marketplace
           </Link>
         </div>

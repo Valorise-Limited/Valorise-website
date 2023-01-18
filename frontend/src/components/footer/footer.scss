@@ -1,0 +1,171 @@
+@use "styles/colors" as colors;
+@use "styles/typography" as typo;
+
+.valorise-footer {
+    background-color: colors.$brand-sea-green;
+    font-size: typo.$fz-sm;
+}
+
+.footer-lower-content {
+    background-color: colors.$brand-dark-green;
+    padding: 2.4rem 9.6rem;
+    color: colors.$brand-white;
+    display: flex;
+    align-items: center;
+}
+
+.footer-lower-navs {
+    display: flex;
+    font-weight: 500;
+
+
+    &>a {
+        padding: .5rem 1.5rem;
+        color: inherit;
+        text-decoration: underline;
+
+        position: relative;
+
+        &:hover {
+            color: colors.$brand-orange;
+        }
+
+        //white line demacator
+        //get the all sibling except the last sibling
+        &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            background-color: colors.$brand-white;
+            right: -.25rem;
+            top: .5em;
+            height: 1.5rem;
+            width: 2px;
+        }
+    }
+}
+
+.footer-copyright {
+    flex: 32rem;
+    max-width: 32rem;
+    font-weight: 300;
+}
+
+.footer-upper-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 4.8rem 9.6rem;
+
+    &>section:first-child {
+        flex: 2.5;
+
+    }
+
+    &>section:last-child {
+        flex: .5;
+
+    }
+}
+
+
+.footer-site-map {
+    max-width: 80%;
+}
+
+.footer-site-links,
+.footer-links-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links-group>a {
+    padding: 1rem 0;
+    font-weight: 350;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer-site-map__heading {
+    font-weight: 600;
+    color: colors.$brand-blue;
+}
+
+.footer-site-listing {
+    display: flex;
+    flex: wrap;
+
+    &>* {
+        flex: 25rem;
+        max-width: 25rem;
+    }
+
+}
+
+.footer-site-items>div {
+    display: flex;
+    margin-top: 3rem;
+
+    &>span:first-child {
+        flex: 18rem;
+        max-width: 18rem;
+
+        &>img:first-child {
+            width: 15rem;
+        }
+    }
+
+    &>span:last-child {
+        padding: 0 2rem;
+    }
+
+}
+
+.footer-site-items>div:first-child {
+    align-items: baseline;
+
+    &>span:first-child {
+        border-right: 1px solid colors.$brand-blue;
+    }
+
+
+}
+
+.footer-site-items>div:last-child {
+    align-items: center;
+
+    &>span:first-child {
+        border-right: 2px solid colors.$brand-dark-blue;
+    }
+}
+
+.footer-contacts {
+    width: 100%;
+
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+
+    &>* {
+        margin-left: 2rem;
+    }
+
+    &>span {
+        font-weight: 350;
+    }
+
+}
+
+.item-innovate-uk>span:last-child {
+    font-weight: 350;
+}
+
+.valorise-address {
+    font-style: normal;
+    font-weight: 350;
+    display: flex;
+    flex-direction: column;
+}

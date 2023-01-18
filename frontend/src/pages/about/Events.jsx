@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'
 import ClimateBanner from 'components/climate-banner/ClimateBanner';
 import ComingSoon from 'components/coming-soon/ComingSoon';
 
-const Consultancy = () => {
+const Events = () => {
     return (
         <div>
-            <ClimateBanner bannerHeadingText="Consultancy Services" />
+            <ClimateBanner bannerHeadingText="Events" />
 
             <ComingSoon />
         </div>
     )
 }
 
-export default Consultancy
+export default Events

@@ -1,0 +1,74 @@
+@use "styles/colors" as colors;
+@use "styles/typography" as typo;
+
+.privacy-content {
+    padding-top: 5rem;
+    padding-bottom: 12rem;
+}
+
+.accordion {
+    padding: 2.25rem 1.5rem;
+    border-top: 1px solid colors.$brand-blue;
+
+}
+
+.accordion:last-child {
+    border-bottom: 1px solid colors.$brand-blue;
+}
+
+.accordion-heading--blue {
+    color: colors.$brand-blue;
+}
+
+.accordion-visible {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.accordion-dropdown {
+
+    &>* {
+        margin-top: 1.5rem;
+    }
+}
+
+.accordion-bullet-listing {
+    padding-left: 3rem;
+
+    &>li {
+        list-style: disc;
+    }
+}
+
+.accordion-dropdown {
+    padding-right: 1rem;
+    line-height: typo.$fz-heading-3;
+    font-weight: 300;
+}
+
+.privacy-intro>article {
+    margin-bottom: 3rem;
+}
+
+.privacy-intro>article p {
+    line-height: typo.$fz-heading-3;
+    margin-bottom: 1rem;
+}
+
+.accordion-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    transition: background-color .35s ease-in;
+
+    &.selected {
+        background-color: colors.$brand-orange;
+    }
+}

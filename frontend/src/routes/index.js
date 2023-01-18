@@ -14,13 +14,18 @@ const {
     TransportLogistics,
     WasteRegulated,
     MeetTheTeam,
-    FAQ } = pages;
+    PrivacyPolicy,
+    FAQ,
+    Events } = pages;
 
 const authenticatedProtectedRoutes = [];
 
 const publicRoutes = [
     {
         path: "/about/team", element: <MeetTheTeam />
+    },
+    {
+        path: "/about/events", element: <Events />
     },
     {
         path: "/about/faq", element: <FAQ />
@@ -36,24 +41,26 @@ const publicRoutes = [
         path: "/resources/case-studies", element: <CaseStudies />
     },
     {
-        path: "/market-place", element: <MarketPlace />
+        path: "/marketplace", element: <MarketPlace />
     },
     {
-        path: "/valorise-services/analytical", element: <Analytical />
+        path: "/services/analytical", element: <Analytical />
     },
     {
-        path: "/valorise-services/processing", element: <Processing />
+        path: "/services/processing", element: <Processing />
     },
     {
-        path: "/valorise-services/consultancy", element: <Consultancy />
+        path: "/services/consultancy", element: <Consultancy />
     },
     {
-        path: "/valorise-services/transport-and-logistics", element: <TransportLogistics />
+        path: "/services/transport", element: <TransportLogistics />
     },
     {
-        path: "/valorise-services/waste-regulated", element: <WasteRegulated />
+        path: "/services/waste-regulated", element: <WasteRegulated />
     },
-
+    {
+        path: "/legal/privacy-policy", element: <PrivacyPolicy />
+    },
 
     {
         path: "/contact", element: <Contact />

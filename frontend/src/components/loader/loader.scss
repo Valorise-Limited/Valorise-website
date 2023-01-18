@@ -1,0 +1,33 @@
+@use "styles/colors" as color;
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.loading-text {
+    margin-top: 2rem;
+}
+
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 7px solid color.$brand-warm-grey;
+    border-left-color: color.$brand-blue;
+    animation: spin 1s ease-in infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

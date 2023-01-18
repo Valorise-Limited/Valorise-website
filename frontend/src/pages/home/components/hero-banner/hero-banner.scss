@@ -13,12 +13,8 @@
     flex-direction: column;
     z-index: -1;
     height: 100%;
+    object-fit: cover;
 
-    &>img {
-        height: 100%;
-        width: 100vw;
-        object-fit: cover;
-    }
 }
 
 .homepage-intro__writeup {
