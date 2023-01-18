@@ -1,10 +1,10 @@
-import React from 'react';
-import Header from "../header";
+
+import Header from "../header/NonAuthenticationHeader";
 import Footer from "../footer/Footer"
 
 
 
-const NonAuthenticatedLayout = ({ children }) => {
+const NonAuthenticationLayout = ({ children }) => {
 
   return (
     <>
@@ -17,4 +17,4 @@ const NonAuthenticatedLayout = ({ children }) => {
   )
 }
 
-export default NonAuthenticatedLayout
+export default NonAuthenticationLayout;
