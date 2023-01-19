@@ -5,6 +5,8 @@ import pluumoImage from "assets/svgs/pluumo.svg";
 import fleatherImage from "assets/svgs/fleather.svg";
 import xamplaImage from "assets/svgs/xampala.svg";
 import "./watbs.scss";
+import { caseStudies } from 'routes/url';
+import ValoriseCardLink from 'components/card/ValoriseCardLink';
 
 const WhatAreTheBenefits = () => {
     return (
@@ -35,43 +37,12 @@ const WhatAreTheBenefits = () => {
                                 Learn more about organisations valorising agri-food by-products.
                             </p>
                             <ul className='case-studies__listing'>
-                                <li className='card'>
-                                    <article className='card-inner brand-shadow-1'>
-                                        <div className='card-image-block'>
-                                            <img src={pluumoImage} alt="This represents a case study photograph" />
-                                        </div>
-                                        <div className='card-text'>
-                                            <h4 className='text-bold-xl'>Pluumo</h4>
-                                            <p>Ever wondered what happens to waste feathers from the poultry industry?</p>
-                                        </div>
-                                    </article>
-                                </li>
-                                <li className='card'>
-                                    <article className='card-inner brand-shadow-1'>
-                                        <div className='card-image-block'>
-                                            <img src={fleatherImage} alt="This represents a case study photograph" />
-                                        </div>
-                                        <div className='card-text'>
-                                            <h4 className='text-bold-xl'>Fleather</h4>
-                                            <p>Vegan leather made from  floral waste from the temples and mosques of India.</p>
-                                        </div>
-                                    </article>
-                                </li>
-                                <li className='card'>
-                                    <article className='card-inner brand-shadow-1'>
-                                        <div className='card-image-block'>
-                                            <img src={xamplaImage} alt="This represents a case study photograph" />
-                                        </div>
-                                        <div className='card-text'>
-                                            <h4 className='text-bold-xl'>Xampla</h4>
-                                            <p>Meet the world&apos;s first plant protein material for commercial use.</p>
-                                        </div>
-                                    </article>
-                                </li>
-
+                                <ValoriseCardLink image={pluumoImage} cardName={"Pluumo"} text="Ever wondered what happens to waste feathers from the poultry industry?" imageAlt={"This represents a case study photograph"} />
+                                <ValoriseCardLink image={fleatherImage} cardName={"Fleather"} text="Vegan leather made from  floral waste from the temples and mosques of Indiaz" imageAlt={"This represents a case study photograph"} />
+                                <ValoriseCardLink image={xamplaImage} cardName={"Xampla"} text="Meet the world&apos;s first plant protein material for commercial use." imageAlt={"This represents a case study photograph"} />
                             </ul>
                             <div className='case-studies__btn-block'>
-                                <BrandButton buttonText={"More Case Studies"} />
+                                <BrandButton buttonText={"More Case Studies"} isLink={true} linkURL={caseStudies} />
                             </div>
                         </div>
                     </div>

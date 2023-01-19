@@ -1,4 +1,5 @@
 import { pages } from "pages";
+import * as url from "./url"
 
 
 const {
@@ -22,7 +23,7 @@ const authenticatedProtectedRoutes = [];
 
 const publicRoutes = [
     {
-        path: "/about/team", element: <MeetTheTeam />
+        path: url.aboutUs, element: <MeetTheTeam />
     },
     {
         path: "/about/events", element: <Events />
@@ -38,10 +39,10 @@ const publicRoutes = [
     },
 
     {
-        path: "/resources/case-studies", element: <CaseStudies />
+        path: url.caseStudies, element: <CaseStudies />
     },
     {
-        path: "/marketplace", element: <MarketPlace />
+        path: url.marketplace, element: <MarketPlace />
     },
     {
         path: "/services/analytical", element: <Analytical />
@@ -59,15 +60,15 @@ const publicRoutes = [
         path: "/services/waste-regulated", element: <WasteRegulated />
     },
     {
-        path: "/legal/privacy-policy", element: <PrivacyPolicy />
+        path: url.privacy, element: <PrivacyPolicy />
     },
 
     {
-        path: "/contact", element: <Contact />
+        path: url.contactUs, element: <Contact />
     },
 
     {
-        path: "/", element: <Home />
+        path: url.home, element: <Home />
     },
 
 ];

@@ -2,6 +2,7 @@ import React from 'react';
 import "./whbs.scss"
 import rockectIllustrator from "assets/svgs/rocket.svg";
 import BrandButton from 'components/button/BrandButton';
+import { marketplace } from "routes/url"
 
 const WeHelpBusinesses = () => {
     return (
@@ -30,7 +31,7 @@ const WeHelpBusinesses = () => {
                             <p className='market-value text-center'>
                                 Our marketplace provides a platform to link agri-food by-product generators with businesses looking for sustainable sources of materials. It also enables you to advertise your sustainable products and services.
                             </p>
-                            <BrandButton buttonText={"Learn More"} isLink={true} linkURL={"//facebook.com"} />
+                            <BrandButton buttonText={"Learn More"} isLink={true} linkURL={marketplace} />
                         </div>
                     </div>
                 </div>
