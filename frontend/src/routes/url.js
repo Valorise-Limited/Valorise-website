@@ -4,7 +4,15 @@ const aboutUs = "/about/team";
 const contactUs = "/contact"
 const marketplace = "marketplace";
 const privacy = "/legal/privacy-policy";
-const caseStudies = "/resources/case-studies"
+const caseStudies = `/resources/case-studies`;
+const caseStudyPlummo = `${caseStudies}/plummo`;
+const caseStudyCelluComp = `${caseStudies}/cellucomp`;
+const caseStudyXampla = `${caseStudies}/xampla`;
+const caseStudyEdwards = `${caseStudies}/edwards`;
+const caseStudyFleather = `${caseStudies}/fleather`;
+const caseStudyKeracol = `${caseStudies}/keracol`;
+const caseStudyRecEgg = `${caseStudies}/rec-egg`;
+const caseStudyShellworks = `${caseStudies}/shellworks`;
 
 export {
     home,
@@ -12,5 +20,13 @@ export {
     marketplace,
     contactUs,
     privacy,
-    caseStudies
+    caseStudies,
+    caseStudyCelluComp,
+    caseStudyEdwards,
+    caseStudyFleather,
+    caseStudyKeracol,
+    caseStudyPlummo,
+    caseStudyRecEgg,
+    caseStudyShellworks,
+    caseStudyXampla,
 }

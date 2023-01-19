@@ -3,6 +3,11 @@ import ClimateBanner from 'components/climate-banner/ClimateBanner';
 import plummoImage from "assets/svgs/pluumo.svg";
 import fleatherImage from "assets/svgs/fleather.svg";
 import cellucompImage from "assets/svgs/cellucomp.svg";
+import edwardsImage from "assets/svgs/edwards.svg";
+import recEggImage from "assets/svgs/rec-egg.svg";
+import keracolImage from "assets/svgs/keracol.svg";
+import xamplaImage from "assets/svgs/xampla.svg";
+import shellWorksImage from "assets/svgs/shellworks.svg"
 import ValoriseCardLink from 'components/card/ValoriseCardLink';
 import "./case-studies.scss"
 import BrandButton from 'components/button/BrandButton';
@@ -27,44 +32,44 @@ const caseStudies = [
   {
     id: 3,
     name: "CelluComp",
-    introText: "",
+    introText: "Learn about the Scottish-based company's advancements with Curran®",
     image: cellucompImage,
     text: "CelluComp is a Scottish-based company located in Fife, near Edinburgh. Their team of scientists and business professionals work on the development and commercialisation of sustainable materials. Their principal activity is to develop and commercialise Curran®, a ..."
   },
   {
     id: 4,
-    name: "Plummo",
+    name: "Edwards",
     introText: "",
-    image: plummoImage,
-    text: "Deliveries are playing an increasingly important role in our lives. Yet with every delivery being made, inevitably packaging must be used to keep goods safe during transport. This is especially true for..."
+    image: edwardsImage,
+    text: "The King Edward potato is one of the oldest surviving varieties in Europe dating back to 1902 when it was first grown by John Butler in Lincolnshire. But what do you do with the misshapes that are not good enough for our supermarkets?"
   },
   {
     id: 5,
-    name: "Plummo",
+    name: "Rec-Egg",
     introText: "",
-    image: plummoImage,
-    text: "Deliveries are playing an increasingly important role in our lives. Yet with every delivery being made, inevitably packaging must be used to keep goods safe during transport. This is especially true for..."
+    image: recEggImage,
+    text: "In the UK alone, over 15,000 tonnes of eggshells are produced every year, which is predominantly sent to landfill. There is a similar situation across Europe and elsewhere globally. The mining industry releases thousands of tons of Greenhouse gases..."
   },
   {
     id: 6,
-    name: "Plummo",
+    name: "Keracol",
     introText: "",
-    image: plummoImage,
-    text: "Deliveries are playing an increasingly important role in our lives. Yet with every delivery being made, inevitably packaging must be used to keep goods safe during transport. This is especially true for..."
+    image: keracolImage,
+    text: "Global demand for more sustainable practices is ever increasing. Keracol believes in circular economy and sustainability, focusing on the extraction of unique natural ingredients from upcycled waste plant materials. Building formulations with..."
   },
   {
     id: 7,
-    name: "Plummo",
+    name: "Xampla",
     introText: "",
-    image: plummoImage,
-    text: "Deliveries are playing an increasingly important role in our lives. Yet with every delivery being made, inevitably packaging must be used to keep goods safe during transport. This is especially true for..."
+    image: xamplaImage,
+    text: "Microplastics are commonly added to fabric softeners, shampoos and cosmetics, agricultural and industrial products. Many end up in the ocean, where they are ingested by marine life, blocking digestion, affecting nutrition, and..."
   },
   {
     id: 8,
-    name: "Plummo",
+    name: "Shellworks",
     introText: "",
-    image: plummoImage,
-    text: "Deliveries are playing an increasingly important role in our lives. Yet with every delivery being made, inevitably packaging must be used to keep goods safe during transport. This is especially true for..."
+    image: shellWorksImage,
+    text: "Since 2019 Shellworks have pioneered the production of biopolymers extracted from seafood waste. Perfect for thin film applications, Shellmer is..."
   },
 
 ]

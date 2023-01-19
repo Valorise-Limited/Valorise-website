@@ -3,9 +3,9 @@ import BrandButton from 'components/button/BrandButton';
 import handIllustrator from "assets/svgs/hand-illustrator.svg";
 import pluumoImage from "assets/svgs/pluumo.svg";
 import fleatherImage from "assets/svgs/fleather.svg";
-import xamplaImage from "assets/svgs/xampala.svg";
+import cellucompImage from "assets/svgs/cellucomp.svg";
 import "./watbs.scss";
-import { caseStudies } from 'routes/url';
+import * as url from 'routes/url';
 import ValoriseCardLink from 'components/card/ValoriseCardLink';
 
 const WhatAreTheBenefits = () => {
@@ -37,12 +37,12 @@ const WhatAreTheBenefits = () => {
                                 Learn more about organisations valorising agri-food by-products.
                             </p>
                             <ul className='case-studies__listing'>
-                                <ValoriseCardLink image={pluumoImage} cardName={"Pluumo"} text="Ever wondered what happens to waste feathers from the poultry industry?" imageAlt={"This represents a case study photograph"} />
-                                <ValoriseCardLink image={fleatherImage} cardName={"Fleather"} text="Vegan leather made from  floral waste from the temples and mosques of Indiaz" imageAlt={"This represents a case study photograph"} />
-                                <ValoriseCardLink image={xamplaImage} cardName={"Xampla"} text="Meet the world&apos;s first plant protein material for commercial use." imageAlt={"This represents a case study photograph"} />
+                                <ValoriseCardLink image={pluumoImage} cardName={"Pluumo"} text="Ever wondered what happens to waste feathers from the poultry industry?" imageAlt={"This represents a case study photograph"} linkTo={url.caseStudyPlummo} />
+                                <ValoriseCardLink image={fleatherImage} cardName={"Fleather"} text="Vegan leather made from  floral waste from the temples and mosques of Indiaz" imageAlt={"This represents a case study photograph"} linkTo={url.caseStudyFleather} />
+                                <ValoriseCardLink image={cellucompImage} cardName={"CelluComp"} text="Learn about the Scottish-based company’s advancements with Curran®." imageAlt={"This represents a case study photograph"} linkTo={url.caseStudyCelluComp} />
                             </ul>
                             <div className='case-studies__btn-block'>
-                                <BrandButton buttonText={"More Case Studies"} isLink={true} linkURL={caseStudies} />
+                                <BrandButton buttonText={"More Case Studies"} isLink={true} linkURL={url.caseStudies} />
                             </div>
                         </div>
                     </div>
