@@ -11,17 +11,6 @@
     max-width: 34.3rem;
     min-width: 31.3rem;
     padding: 1rem 1.5rem;
-    overflow: hidden;
-
-
-
-
-    &.card-large {
-        flex: 60rem;
-        max-width: 60rem;
-    }
-
-
 
     &-link {
         overflow: hidden;
@@ -30,6 +19,7 @@
         border-radius: 1.6rem;
         background-color: colors.$brand-sea-green-light;
         border: 0;
+        height: 100%;
     }
 
     &-link:hover {
@@ -83,4 +73,18 @@
     }
 
 
+}
+
+.card-large {
+    flex: 60rem;
+    max-width: 60rem;
+    height: 64.8rem;
+
+    &>.card-link h4 {
+        font-size: typo.$fz-heading-3;
+    }
+
+    &>.card-link p {
+        font-size: typo.$fz-md;
+    }
 }

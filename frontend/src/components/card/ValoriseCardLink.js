@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./valorise-card-link.scss"
 
-const ValoriseCardLink = ({ image, cardName, text, imageAlt = "This represents a card illustration", linkTo = null, key = null, className = null }) => {
+const ValoriseCardLink = ({ image, cardName, text, imageAlt = "This represents a card illustration", linkTo = null, key = null, className = "" }) => {
     return (
         <li className={`card ${className}`} key={key}>
             <Link className='card-link' to={linkTo}>

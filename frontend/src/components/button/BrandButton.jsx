@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./brand-button.scss"
 
-const BrandButton = ({ buttonText, elementClassName = null, className = null, onClick = () => null, buttonType = "button", isLink = true, linkURL = null }) => {
+const BrandButton = ({ buttonText = "", elementClassName = "", className = "", onClick, buttonType = "button", isLink = false, linkURL = null }) => {
     return (
         <>
             {

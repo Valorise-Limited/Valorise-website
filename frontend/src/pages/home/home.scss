@@ -1,12 +1,6 @@
 @use "styles/typography" as typo;
 
-.large-text-writeup {
-    font-size: clamp(3rem, 4vw, typo.$fz-xxl-2);
-    max-width: calc((102.6rem / 120rem) * 100%);
-    margin: 0 auto;
 
-
-}
 
 .homepage-article {
     padding: 6.4rem 20.2rem;
