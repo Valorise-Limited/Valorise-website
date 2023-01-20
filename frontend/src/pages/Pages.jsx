@@ -5,8 +5,6 @@ import { publicRoutes, authenticatedProtectedRoutes } from "routes";
 import "./pages.scss"
 import React from "react";
 
-import useElementOnScreen from "hooks/useElementOnScreen";
-import { useRef } from 'react';
 import Loader from "components/loader/Loader";
 import GoToTop from "components/go-to-top/GoToTop";
 
@@ -27,14 +25,7 @@ const Pages = () => {
 
   const user = false;
   const location = useLocation();
-  const targetRef = useRef(null);
 
-  const showHeaderBackground = useElementOnScreen({
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.3,
-
-  }, targetRef)
   return (
     <React.Suspense fallback={<Loader />}>
 
@@ -46,7 +37,7 @@ const Pages = () => {
         )
           : (
 
-            <NonAuthenticationLayout showHeaderBackground={showHeaderBackground}>
+            <NonAuthenticationLayout>
               <PublicRoutesWrapper key={location.pathname} />
               <GoToTop />
             </NonAuthenticationLayout>

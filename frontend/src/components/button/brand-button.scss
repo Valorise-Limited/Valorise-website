@@ -5,31 +5,89 @@
 .brand-button {
     display: flex;
     flex-direction: column;
-}
 
-.primary-button {
-    outline: none;
-    border: 1px solid transparent;
-    background-color: colors.$brand-orange;
-    color: colors.$brand-white;
-    max-width: max-content;
-    font-size: 1.6rem;
-    border-radius: 0.8rem;
-    box-shadow: var.$primary-box-shadow;
-    letter-spacing: 0.015em;
-    font-weight: 450;
-    transition: background-color .15s ease-in;
-    padding: 1.6rem 4.5rem;
-    text-transform: capitalize;
 
-    &:hover {
-        background-color: darken(colors.$brand-orange, 10);
+    //default design style
+    &>button,
+    &>a {
+        outline: none;
+        border: 3px solid transparent;
+        background-color: colors.$brand-orange;
+        color: colors.$brand-white;
+        max-width: max-content;
+        font-size: 1.6rem;
+        border-radius: 0.8rem;
+        box-shadow: var.$primary-box-shadow;
+        letter-spacing: 0.015em;
+        font-weight: 600;
+        transition: all .15s ease-in;
+        padding: 1.6rem 4.5rem;
+        text-transform: capitalize;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: darken(colors.$brand-orange, 10);
+            box-shadow: var.$hover-box-shadow;
+        }
+
+        &:active {
+            box-shadow: var.$pressed-box-shadow;
+        }
+
+        &:focus {
+            border: 3px solid colors.$brand-blue
+        }
+
+        //large design style
+        &.large {
+            max-width: 24rem;
+            font-size: typo.$fz-xl;
+            font-weight: 600;
+
+        }
+
+        //secondary states design style
+        &.secondary {
+            background-color: colors.$brand-white;
+            border: 2px solid colors.$brand-orange;
+            color: colors.$brand-orange;
+
+            &:hover {
+                background-color: colors.$brand-light-orange;
+            }
+
+            &:focus {
+                outline: 3px solid colors.$brand-blue;
+            }
+
+            &:active {
+                outline: 0;
+            }
+
+            &.disabled {
+                background-color: colors.$brand-white;
+                color: colors.$primary-grey;
+                border: 2px solid colors.$brand-burnt-white;
+            }
+
+        }
+
+        //disabled design style
+        &.disabled {
+            background-color: colors.$brand-burnt-white;
+            box-shadow: var.$disabled-box-shadow;
+            color: colors.$primary-grey;
+            pointer-events: none;
+            cursor: default;
+        }
     }
-}
 
-.primary-button--large {
-    max-width: 24rem;
-    font-size: typo.$fz-xl;
-    font-weight: 600;
+
+
+
+
 
 }
