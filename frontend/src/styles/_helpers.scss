@@ -125,7 +125,7 @@
 
 .big-heading-4 {
     font-size: typo.$fz-heading-4;
-    color: colors.$brand-dark-blue;
+    color: colors.$brand-blue;
     letter-spacing: 1.5%;
     font-weight: 550;
     line-height: 3;
@@ -147,6 +147,14 @@
     @media(max-width: 1280px) {
         max-width: 70rem;
     }
+}
+
+.large-text-writeup {
+    font-size: clamp(3rem, 4vw, typo.$fz-xxl-2);
+    max-width: calc((102.6rem / 120rem) * 100%);
+    margin: 0 auto;
+
+
 }
 
 .large-caption {
