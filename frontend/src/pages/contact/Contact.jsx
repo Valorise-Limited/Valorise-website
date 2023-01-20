@@ -26,7 +26,7 @@ const Contact = () => {
                                 <li className="valorise-contact__heading big-heading-4">Get in Touch</li>
                                 <li className="valorise-contact-item">
                                     <img src={telBlueIcon} alt="telephone icon" />
-                                    <span>+44(0)1653618074</span>
+                                    <span>+44 (0) 7438592793</span>
                                 </li>
                                 <li className="valorise-contact-item">
                                     <img src={msgBlueIcon} alt="message icon" />
