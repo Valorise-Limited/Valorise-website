@@ -1,8 +1,13 @@
+import ClimateBanner from 'components/climate-banner/ClimateBanner'
+import ComingSoon from 'components/coming-soon/ComingSoon'
 import React from 'react'
 
 const Xampla = () => {
     return (
-        <div>Xampla</div>
+        <>
+            <ClimateBanner bannerHeadingText={"Xampla"} />
+            <ComingSoon />
+        </>
     )
 }
 
