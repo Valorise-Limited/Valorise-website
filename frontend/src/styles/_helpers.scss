@@ -149,6 +149,14 @@
     }
 }
 
+.large-text-writeup {
+    font-size: clamp(3rem, 4vw, typo.$fz-xxl-2);
+    max-width: calc((102.6rem / 120rem) * 100%);
+    margin: 0 auto;
+
+
+}
+
 .large-caption {
     font-size: typo.$fz-sm;
     color: colors.$primary-grey;

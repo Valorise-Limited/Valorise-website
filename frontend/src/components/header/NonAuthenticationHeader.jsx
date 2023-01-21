@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import chevronDownIcon from "assets/svgs/icon-up.svg";
 import "./non-auth-header.scss";
 import HamburgerToggleButton from 'components/button/HamburgerToggleButton';
-
-
+import * as url from "routes/url"
 
 const NonAunthenticationHeader = ({ showHeaderBackground }) => {
   const [aboutDropdownActive, setAboutDropdownActive] = useState(false);
@@ -44,7 +43,7 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
 
     <header className={` ${showHeaderBackground ? "valorise-header valorise-header__nonAuth header-nav--scrolled" : "valorise-header__nonAuth valorise-header"}`}>
       <div className='header-left__nav' >
-        <Link to="/" className='goto-home__link'>
+        <Link to={url.home} className='goto-home__link'>
           <img src={logo} alt="Valorise Brand Logo" />
         </Link>
       </div>
@@ -62,7 +61,7 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
             aboutDropdownActive ? (<div className='drop-down__items'>
               <ul>
                 <li>
-                  <Link to="/about/team">About Us</Link>
+                  <Link to={url.aboutUs}>About Us</Link>
                 </li>
                 <li>
                   <Link to="/about/events">Events</Link>
@@ -116,19 +115,19 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
                   <Link to="/resources/blog">Blog</Link>
                 </li>
                 <li>
-                  <Link to="/resources/case-studies">Cast Studies</Link>
+                  <Link to={url.caseStudies}>Case Studies</Link>
                 </li>
               </ul>
             </div>) : null
           }
         </div>
         <div className='header-link'>
-          <Link to="/marketplace">
+          <Link to={url.marketplace}>
             Marketplace
           </Link>
         </div>
         <div className='header-link'>
-          <Link to="/contact">
+          <Link to={url.contactUs}>
             Contact
           </Link>
         </div>

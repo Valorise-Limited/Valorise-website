@@ -1,0 +1,90 @@
+@use "styles/typography" as typo;
+@use "styles/colors" as colors;
+@use "styles/variables" as var;
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 34.3rem;
+    max-width: 34.3rem;
+    min-width: 31.3rem;
+    padding: 1rem 1.5rem;
+
+    &-link {
+        overflow: hidden;
+        transition: box-shadow .35s ease-in;
+        box-shadow: var.$primary-box-shadow;
+        border-radius: 1.6rem;
+        background-color: colors.$brand-sea-green-light;
+        border: 0;
+        height: 100%;
+    }
+
+    &-link:hover {
+        box-shadow: var.$hover-box-shadow;
+
+        & .card-image-block::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: colors.$brand-white;
+
+        }
+    }
+
+    &-link:active {
+        box-shadow: var.$pressed-box-shadow;
+
+        & .card-image-block::before {
+            box-shadow: var.$pressed-box-shadow;
+
+        }
+    }
+
+    &-link:focus {
+        outline: 3px solid colors.$brand-blue;
+    }
+
+    &-image-block {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+
+
+        &>img {
+            height: 100%;
+        }
+    }
+
+    &-text {
+
+        padding: 1.5rem;
+
+        &>p {
+            font-size: typo.$fz-sm;
+            margin-top: 1rem;
+        }
+    }
+
+
+}
+
+.card-large {
+    flex: 60rem;
+    max-width: 60rem;
+    height: 64.8rem;
+
+    &>.card-link h4 {
+        font-size: typo.$fz-heading-3;
+    }
+
+    &>.card-link p {
+        font-size: typo.$fz-md;
+    }
+}
