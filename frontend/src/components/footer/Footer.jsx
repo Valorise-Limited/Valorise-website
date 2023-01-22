@@ -8,7 +8,7 @@ import msgBlueIcon from "assets/svgs/brand-blue-message-icon.svg";
 import locationBlueIcon from "assets/svgs/brand-blue-location-icon.svg";
 import telBlueIcon from "assets/svgs/brand-blue-telephone-icon.svg";
 import twitterBlueIcon from "assets/svgs/brand-blue-twitter-icon.svg";
-
+import * as url from "routes/url"
 const Footer = () => {
   return (
     <footer className="valorise-footer">
@@ -20,7 +20,7 @@ const Footer = () => {
                 <li className="footer-site-links">
                   <span className="footer-site-map__heading">About</span>
                   <span className="footer-links-group">
-                    <Link to="/about/team">
+                    <Link to={url.aboutUs}>
                       About Us
                     </Link>
                     <Link to="/about/events">
@@ -54,7 +54,7 @@ const Footer = () => {
                     <Link to="/resources/blog">
                       Blog
                     </Link>
-                    <Link to="/resources/case-studies">
+                    <Link to={url.caseStudies}>
                       Case Studies
                     </Link>
                   </span>
@@ -94,7 +94,7 @@ const Footer = () => {
               <li className="footer-site-map__heading">Get in Touch</li>
               <li className="footer-contact-item">
                 <img src={telBlueIcon} alt="telephone icon" />
-                <span>+44(0)1653618074</span>
+                <span>+44&nbsp;(0)&nbsp;7438592793</span>
               </li>
               <li className="footer-contact-item">
                 <img src={msgBlueIcon} alt="message icon" />
@@ -110,10 +110,10 @@ const Footer = () => {
                 </address>
               </li>
               <li className="footer-contact-item">
-                <Link to="//twitter.com" target="__blank">
+                <Link to="//twitter.com" target="_blank">
                   <img src={twitterBlueIcon} alt="twitter icon" />
                 </Link>
-                <Link to="//linkedin.com" target="__blank">
+                <Link to="//linkedin.com/company/valorise-limited" target="_blank">
                   <img src={linkedInBlueIcon} alt="linkedin icon" />
                 </Link>
               </li>
@@ -125,13 +125,13 @@ const Footer = () => {
             @2022 Valorise Limited. All Rights Reserved
           </span>
           <span className="footer-lower-navs">
-            <Link to="/contact">
+            <Link to={url.contactUs}>
               Contact Us
             </Link>
             <Link to="#">
               Terms Of Use
             </Link>
-            <Link to="/legal/privacy-policy">
+            <Link to={url.privacy}>
               Privacy Policy
             </Link>
           </span>

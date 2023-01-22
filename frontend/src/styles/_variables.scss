@@ -1,2 +1,11 @@
-$primary-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3),
-    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+$primary-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3),
+    0 1px 3px 1px rgba(0, 0, 0, 0.15);
+
+$hover-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3),
+    0 4px 8px 4px rgba(0, 0, 0, 0.15);
+
+$pressed-box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3),
+    inset -5px -5px 10px rgba(113, 113, 113, 0.15);
+
+$disabled-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),
+    0px 1px 3px 1px rgba(113, 113, 113, 0.15);
