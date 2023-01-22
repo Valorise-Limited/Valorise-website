@@ -1,9 +1,9 @@
 import React from 'react';
 import BrandButton from 'components/button/BrandButton';
 import "./subscribe-banner.scss";
-import envelopeIcon from "assets/svgs/envelope.svg"
+import Input from 'components/input/Input';
 
-const SubscribeBanner = ({ className = null, headingText = "Ocassionally, we send news, and updates." }) => {
+const SubscribeBanner = ({ className = null, headingText = "Occasionally we send news and updates." }) => {
   return (
     <section className={`subscribe-banner ${className}`}>
       <article className='subscribe-banner__inner'>
@@ -14,10 +14,7 @@ const SubscribeBanner = ({ className = null, headingText = "Ocassionally, we sen
           <span>We&apos;re responsible with your details and will never pass them on to anyone else.</span>
         </p>
         <form className='subscribe-form'>
-          <div className='subscribe-form__input-block'>
-            <img src={envelopeIcon} alt='This represents a message icon' />
-            <input placeholder='jon.doe@email.com' type="text" />
-          </div>
+          <Input />
           <div className='subscribe-form-button'>
             <BrandButton buttonText="Sign Up" />
           </div>

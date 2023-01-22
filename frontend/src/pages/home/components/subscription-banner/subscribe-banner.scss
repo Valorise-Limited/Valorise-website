@@ -37,38 +37,6 @@
     justify-content: center;
     width: 100%;
     margin-bottom: 1rem;
-
-    &__input-block {
-        display: flex;
-        align-items: center;
-        background-color: colors.$brand-white;
-        border: 1px solid colors.$brand-black;
-        flex: 65.3rem;
-        max-width: 65.3rem;
-        padding: .5rem 1rem;
-        border-radius: .5em;
-
-        &>input {
-            font-family: inherit;
-            font-size: typo.$fz-lg;
-            padding: .5rem 1rem;
-            width: 100%;
-            border: 1px solid transparent;
-            font-weight: 300;
-            outline: 0;
-
-            &:focus {
-                outline: none;
-            }
-
-            &::placeholder {
-                color: colors.$primary-grey;
-                font-weight: 200;
-            }
-        }
-    }
-
-
 }
 
 .subscribe-form-button {
