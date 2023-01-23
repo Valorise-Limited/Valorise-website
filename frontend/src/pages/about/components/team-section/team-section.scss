@@ -15,6 +15,7 @@
     figure {
         width: 90%;
         margin: 0 auto;
+        cursor: pointer;
         border-radius: 16px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
         .avatar {
@@ -34,6 +35,12 @@
                 display: flex;
                 gap: 24px;
                 align-items: center;
+            }
+        }
+        &:hover {
+            figcaption {
+                transition: ease-in-out 300ms;
+                background: colors.$brand-sea-green;
             }
         }
         

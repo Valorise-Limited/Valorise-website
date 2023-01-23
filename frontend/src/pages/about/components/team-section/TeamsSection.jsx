@@ -31,10 +31,10 @@ const TeamsSection = () => {
                         <h5 className='big-heading-5'>{founder.full_name}</h5>
                         <p className='large-caption'>{founder.position}</p>
                         <div>
-                            <a href={founder.email} target="_blank" rel="noopener noreferrer">
+                            <a href={founder.email} target="_blank" onClick={(e) => e.stopPropagation()} rel="noopener noreferrer">
                                 <img src={message_icon} alt="" />
                             </a>
-                            <Link to={founder.linkedin} target="_blank">
+                            <Link to={founder.linkedin} onClick={(e) => e.stopPropagation()} target="_blank">
                                 <img src={linkedin_icon} alt="" />
                             </Link>
                         </div>
