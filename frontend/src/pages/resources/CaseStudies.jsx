@@ -89,7 +89,6 @@ const CaseStudies = () => {
 
   useEffect(() => {
     setItems([...caseStudies])
-    console.log(visibleItems);
   }, [])
   return (
     <div className='case-studies'>
