@@ -38,7 +38,12 @@
         }
 
         &:focus {
-            border: 3px solid colors.$brand-blue
+            // border: 3px solid colors.$brand-blue;
+            // border: 3px solid colors.$brand-orange;
+            box-shadow: var.$pressed-box-shadow;
+            border: none;
+            background-color: darken(colors.$brand-orange, 10);
+
         }
 
         //large design style
@@ -60,7 +65,11 @@
             }
 
             &:focus {
-                outline: 3px solid colors.$brand-blue;
+                // outline: 3px solid colors.$brand-blue;
+                // border: 2px solid colors.$brand-orange;
+                box-shadow: var.$pressed-box-shadow;
+                border: none;
+                background-color: darken(colors.$brand-orange, 10);
             }
 
             &:active {

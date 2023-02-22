@@ -26,7 +26,7 @@ const CelluComp = () => {
                     </p>
 
                     <p className='case-study__text'>Their principal activity is to develop and commercialise Curran®, a material developed from the extraction of nanocellulose fibres of root vegetables, primarily from sugar beet pulp, a by-product of the sugar industry. </p>
-                    <p className='case-study__text'>One day they noticed a thick mat-like substance growing over the unused fibres lying on their factory floor. This mat, they realised, could be turned into a sustainable alternative to environmentally damaging animal and plastic leather. They called the new material Fleather. They invested into R&D to invent methods to convert the temple-waste into biodegradable packaging and bio-leathers on a commercial basis.</p>
+                    {/* <p className='case-study__text'>One day they noticed a thick mat-like substance growing over the unused fibres lying on their factory floor. This mat, they realised, could be turned into a sustainable alternative to environmentally damaging animal and plastic leather. They called the new material Fleather. They invested into R&D to invent methods to convert the temple-waste into biodegradable packaging and bio-leathers on a commercial basis.</p> */}
                     <p className='case-study__text'>Curran® offers exceptional mechanical and rheological properties for numerous applications, such as paints and coatings, inks, personal care, home care, paper, food, concrete, drilling fluids, composites and other potential applications.</p>
 
                     <p className='case-study__text'>

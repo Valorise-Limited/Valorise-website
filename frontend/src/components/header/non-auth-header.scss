@@ -69,14 +69,15 @@
         &>li {
             display: flex;
             flex-direction: column;
-            border-bottom: 1px solid lighten(colors.$primary-grey, 50);
+            // border-bottom: 1px solid lighten(colors.$primary-grey, 50);
 
             &>a {
                 padding: 1rem;
                 transition: color .3s ease-in;
 
                 &:hover {
-                    color: colors.$brand-blue
+                    color: colors.$brand-blue;
+                    font-weight: 600;
                 }
             }
         }

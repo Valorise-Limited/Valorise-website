@@ -65,7 +65,7 @@ const Contact = () => {
                             <div className='contact-form__inner-block'>
                                 <div className='contact-form__control'>
                                     <div className='form-label'>
-                                        <label>tag</label>
+                                        <label>First name</label>
                                     </div>
                                     <div className='brand-input'>
                                         <input type="text" placeholder="Jon" />

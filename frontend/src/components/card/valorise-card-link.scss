@@ -24,6 +24,7 @@
 
     &-link:hover {
         box-shadow: var.$hover-box-shadow;
+        background-color: colors.$brand-dark-sea-green;
 
         & .card-image-block::before {
             content: "";
@@ -32,8 +33,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: colors.$brand-white;
-
+            
         }
     }
 
@@ -47,7 +47,7 @@
     }
 
     &-link:focus {
-        outline: 3px solid colors.$brand-blue;
+        //outline: 3px solid colors.$brand-blue;
     }
 
     &-image-block {

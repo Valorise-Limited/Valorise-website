@@ -89,6 +89,7 @@ const CaseStudies = () => {
 
   useEffect(() => {
     setItems([...caseStudies])
+    console.log(visibleItems);
   }, [])
   return (
     <div className='case-studies'>
@@ -108,7 +109,10 @@ const CaseStudies = () => {
             ))}
           </ul>
           <div className='case-studies__content-loader'>
-            <BrandButton buttonText={"Load More"} className="secondary" buttonType='button' onClick={() => setVisibleItems(prev => prev + 2)} />
+            {visibleItems <= 6 ?
+             <BrandButton buttonText={"Load More"} className="primary" buttonType='button' onClick={() => setVisibleItems(prev => prev + 2)} />
+             : ""}
+            
           </div>
         </section>
       </article>

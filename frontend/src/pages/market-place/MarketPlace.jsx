@@ -2,6 +2,7 @@ import React from 'react'
 import ClimateBanner from 'components/climate-banner/ClimateBanner';
 import ComingSoon from 'components/coming-soon/ComingSoon';
 
+
 const MarketPlace = () => {
   return (
     <div>

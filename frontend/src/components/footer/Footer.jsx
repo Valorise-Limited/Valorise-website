@@ -122,7 +122,7 @@ const Footer = () => {
         </div>
         <div className="footer-lower-content">
           <span className="footer-copyright">
-            @2022 Valorise Limited. All Rights Reserved
+            @2023 Valorise Limited. All Rights Reserved
           </span>
           <span className="footer-lower-navs">
             <Link to={url.contactUs}>
