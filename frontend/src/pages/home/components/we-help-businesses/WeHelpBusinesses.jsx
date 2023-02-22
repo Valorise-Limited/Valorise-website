@@ -29,7 +29,7 @@ const WeHelpBusinesses = () => {
                                 Marketplace
                             </h4>
                             <p className='market-value text-center'>
-                                Our marketplace provides a platform to link agri-food by-product generators with businesses looking for sustainable sources of materials. It also enables you to advertise your sustainable products and services.
+                            Our marketplace provides a platform to link agri-food by-products generators with businesses looking for sustainable sources of materials. You can also promote your products and services by advertising here.
                             </p>
                             <BrandButton buttonText={"Learn More"} isLink={true} linkURL={marketplace} />
                         </div>
