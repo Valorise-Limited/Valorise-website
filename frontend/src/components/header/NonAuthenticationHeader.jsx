@@ -5,6 +5,7 @@ import chevronDownIcon from "assets/svgs/icon-up.svg";
 import "./non-auth-header.scss";
 import HamburgerToggleButton from 'components/button/HamburgerToggleButton';
 import * as url from "routes/url"
+import { useEffect } from "react";
 
 const NonAunthenticationHeader = ({ showHeaderBackground }) => {
   const [aboutDropdownActive, setAboutDropdownActive] = useState(false);
@@ -13,6 +14,7 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
 
   const dropdownHandler = (e) => {
     e.preventDefault();
+    e.stopPropagation()
 
     switch (e.currentTarget.name) {
       case "about-dropdown-select":
@@ -38,8 +40,18 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
     }
   }
 
+  const handleOutsideClick = () => {
+    setAboutDropdownActive(false);
+    setResourcesDropdownActive(false);
+    setServicesDropdownActive(false);
+  }
   
-
+  useEffect(() => {
+    window.addEventListener('click', handleOutsideClick);
+    return () => {
+      window.removeEventListener('click', handleOutsideClick)
+    }
+  }, [])
 
   return (
 
