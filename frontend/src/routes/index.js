@@ -23,6 +23,8 @@ const Processing = lazy(() => import("pages/valorise-services/Processing"));
 const TransportLogistics = lazy(() => import("pages/valorise-services/TransportLogistics"));
 const WasteRegulated = lazy(() => import("pages/valorise-services/WasteRegulated"));
 const PrivacyPolicy = lazy(() => import("pages/legal/PrivacyPolicy"));
+const EdiPolicy = lazy(() => import("pages/legal/EdiPolicy"));
+const Sustainability = lazy(() => import("pages/legal/Sustainability"));
 const Events = lazy(() => import("pages/about/Events"));
 const FAQ = lazy(() => import("pages/about/FAQ"));
 const MeetTheTeam = lazy(() => import("pages/about/MeetTheTeam"));
@@ -97,6 +99,13 @@ const publicRoutes = [
     {
         path: url.privacy, element: <PrivacyPolicy />
     },
+    {
+        path: url.edipolicy, element: <EdiPolicy />
+    },
+    {
+        path: url.sustainability, element: <Sustainability />
+    },
+
 
     {
         path: url.contactUs, element: <Contact />

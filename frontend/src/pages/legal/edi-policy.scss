@@ -1,0 +1,42 @@
+@use "styles/colors" as colors;
+@use "styles/typography" as typo;
+
+.edi-policy {
+    padding: 8rem 0;
+}
+
+
+
+.edipolicy__text {
+    font-size: typo.$fz-md;
+    line-height: typo.$fz-heading-3;
+    font-weight: 350;
+    margin: 3rem 0;
+}
+
+.edipolicy-list {
+    padding-left: 2rem;
+    font-weight: 350;
+}
+
+.edipolicy-list-item {
+    line-height: 2;
+    margin-bottom: .5rem;
+    position: relative;
+
+    &::before {
+        content: url(../../assets/svgs/small-dot.svg);
+        position: absolute;
+        top: -.5rem;
+        left: -1.25rem;
+    }
+
+    &:nth-child(3) {
+        width: 95%;
+    }
+
+    &:last-child {
+        width: 85%;
+    }
+
+}

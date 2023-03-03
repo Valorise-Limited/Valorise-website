@@ -4,6 +4,8 @@ const aboutUs = "/about/team";
 const contactUs = "/contact"
 const marketplace = "marketplace";
 const privacy = "/legal/privacy-policy";
+const edipolicy = "/legal/edi-policy";
+const sustainability = "/legal/sustainability";
 const caseStudies = `/resources/case-studies`;
 const caseStudyPlummo = `${caseStudies}/plummo`;
 const caseStudyCelluComp = `${caseStudies}/cellucomp`;
@@ -20,6 +22,8 @@ export {
     marketplace,
     contactUs,
     privacy,
+    edipolicy,
+    sustainability,
     caseStudies,
     caseStudyCelluComp,
     caseStudyEdwards,

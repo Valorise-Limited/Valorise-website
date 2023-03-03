@@ -59,35 +59,13 @@ const Footer = () => {
                     </Link>
                   </span>
                 </li>
-                <li className="footer-site-links">
+                {/* <li className="footer-site-links">
                   <span className="footer-site-map__heading">Market Place</span>
 
-                </li>
+                </li> */}
               </ul>
             </nav>
-            <article className="footer-site-items">
-              <div className="item-valorise">
-
-                <span>
-                  <img src={brandLogo} alt="This represent valorise logo" />
-                </span>
-
-                <span>
-                  <img src={uksgdLogos} alt="This represent UKSGD logos" />
-                </span>
-
-              </div>
-              <div className="item-innovate-uk">
-
-                <span>
-                  <img src={innovateUKLogo} alt="This represent uk innovate logo" />
-                </span>
-
-                <span>
-                  Fast Start Innovation Project IUK #10044671
-                </span>
-              </div>
-            </article>
+            
           </section>
           <section className="footer-contacts">
             <ul className="footer-contact-listing">
@@ -120,6 +98,28 @@ const Footer = () => {
             </ul>
           </section>
         </div>
+        <div>
+            <article className="footer-site-items">
+              <div className="item-valorise">
+
+                <span>
+                  <img src={brandLogo} alt="This represent valorise logo" />
+                </span>
+
+                <span>
+                  <img src={uksgdLogos} alt="This represent UKSGD logos" />
+                </span>
+
+                <span>
+                  <img src={innovateUKLogo} alt="This represent uk innovate logo" />
+                </span>
+
+                <span>
+                  Fast Start Innovation Project IUK #10044671
+                </span>
+              </div>
+            </article>
+        </div>
         <div className="footer-lower-content">
           <span className="footer-copyright">
           © 2023 Valorise Limited. All Rights Reserved
@@ -128,8 +128,11 @@ const Footer = () => {
             <Link to={url.contactUs}>
               Contact Us
             </Link>
-            <Link to="#">
-              Terms Of Use
+            <Link to={url.edipolicy}>
+              EDI Policy
+            </Link>
+            <Link to={url.sustainability}>
+              Sustainability Policy
             </Link>
             <Link to={url.privacy}>
               Privacy Policy

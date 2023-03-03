@@ -3,6 +3,7 @@ import edwardsImage from "assets/svgs/edwards.svg"
 import wineImage from "assets/svgs/wine.svg"
 import potatoImage from "assets/svgs/potato.svg"
 import React from 'react'
+import "./case-study-details.scss";
 import { Link } from 'react-router-dom';
 
 const Edwards = () => {
