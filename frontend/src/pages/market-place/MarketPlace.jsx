@@ -1,6 +1,7 @@
 import React from 'react'
 import ClimateBanner from 'components/climate-banner/ClimateBanner';
-import ComingSoon from 'components/coming-soon/ComingSoon';
+import teamBuildingIllustration from "assets/svgs/team-building-illustrator.svg";
+import "./market-place.scss"
 
 
 const MarketPlace = () => {
@@ -17,9 +18,16 @@ const MarketPlace = () => {
           <p className='large-text-writeup text-center case-studies-writeup line-height-xl'>
           The marketplace provides a platform to confidentially link agri-food by-product generators with businesses looking for sustainable sources of materials
           </p>
-        </section>
+      </section>
 
-      <ComingSoon />
+      <article className='brand-container coming-soon-block'>
+            <div className='coming-soon'>
+                <span>
+                    <img src={teamBuildingIllustration} alt="team building illustration" />
+                </span>
+            </div>
+        </article>
+
     </div>
   )
 }

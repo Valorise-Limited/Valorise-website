@@ -2,6 +2,12 @@ import { Link } from "react-router-dom";
 import "./footer.scss";
 import brandLogo from "assets/svgs/valorise-logo.svg";
 import uksgdLogos from "assets/svgs/uksgd-icons.svg";
+import sustainability7 from "assets/svgs/sustainability7.svg"
+import sustainability11 from "assets/svgs/sustainability11.svg"
+import sustainability12 from "assets/svgs/sustainability12.svg"
+import sustainability13 from "assets/svgs/sustainability13.svg"
+import sustainability14 from "assets/svgs/sustainability14.svg"
+import sustainability15 from "assets/svgs/sustainability15.svg"
 import innovateUKLogo from "assets/svgs/innovate-uk-logo.svg";
 import linkedInBlueIcon from "assets/svgs/brand-blue-linkedin-icon.svg";
 import msgBlueIcon from "assets/svgs/brand-blue-message-icon.svg";
@@ -59,10 +65,9 @@ const Footer = () => {
                     </Link>
                   </span>
                 </li>
-                {/* <li className="footer-site-links">
+                <li className="footer-site-links">
                   <span className="footer-site-map__heading">Market Place</span>
-
-                </li> */}
+                </li>
               </ul>
             </nav>
             
@@ -107,11 +112,17 @@ const Footer = () => {
                 </span>
 
                 <span>
-                  <img src={uksgdLogos} alt="This represent UKSGD logos" />
+                  {/* <img src={uksgdLogos} alt="This represent UKSGD logos" /> */}
+                  <a className="sdgimage" href="https://sdgs.un.org/goals/goal7" target="_blank"><img src={sustainability7} alt="Sustainability 7"  /></a>
+                  <a className="sdgimage" href="https://sdgs.un.org/goals/goal11"  target="_blank"><img src={sustainability11} alt="Sustainability 11" /></a>
+                  <a className="sdgimage" href="https://sdgs.un.org/goals/goal12"  target="_blank"><img src={sustainability12} alt="Sustainability 12" /></a>
+                  <a className="sdgimage" href="https://sdgs.un.org/goals/goal13"  target="_blank"><img src={sustainability13} alt="Sustainability 13" /></a>
+                  <a className="sdgimage" href="https://sdgs.un.org/goals/goal14"  target="_blank"><img src={sustainability14} alt="Sustainability 14" /></a>
+                  <a className="sdgimage" href="https://sdgs.un.org/goals/goal15"  target="_blank"><img src={sustainability15} alt="Sustainability 15" /></a>
                 </span>
 
                 <span>
-                  <img src={innovateUKLogo} alt="This represent uk innovate logo" />
+                  <a href="https://iuk.ktn-uk.org/" target="_blank"></a><img src={innovateUKLogo} alt="This represent uk innovate logo" />
                 </span>
 
                 <span>

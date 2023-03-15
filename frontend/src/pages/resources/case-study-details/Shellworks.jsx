@@ -31,7 +31,7 @@ const ShellWorks = () => {
                     <p className='case-study__text'>Vivomer is created by the microorganisms that are abundant in both marine and soil environments. At the end of its useful life, these same microbes see Vivomer as a food source and consume it, meaning there’s never any microplastics left behind.</p>
                     <p className='case-study__text'>They said ‘no’ to petroleum throughout our entire supply chain and have worked hard to develop a range of natural dyes to work with our packaging. </p>
                     <p className='case-study__text'>
-                    To read more about Shellworks  Click <Link to="https://www.theshellworks.com/" className='case-study__text-link'>here</Link>
+                    To read more about Shellworks  Click <a target="_blank" href="https://www.theshellworks.com/" className='case-study__text-link'>here</a>
                     </p>
                 </section>
             </article>

@@ -28,7 +28,7 @@ const Pluumo = () => {
                     <div className='case-study__features'>Embracing the circular economy, Pluumo has been designed to be a thermal packaging material for a more sustainable future. Unbeatable performance, powered by feathers.</div>
                     <p className='case-study__text'>Pluumo is made using surplus feathers to create a high-performance insulation material that provides natural cushioning, not only making better use of an abundant surplus material, but also allowing deliveries to be made while avoiding plastic packaging.</p>
                     <p className='case-study__text'>
-                        To read more about Pluumo click <Link to="//www.pluumo.com" className='case-study__text-link'>here</Link>
+                        To read more about Pluumo click <a href="//www.pluumo.com" target="_blank" className='case-study__text-link'>here</a>
                     </p>
                 </section>
             </article>

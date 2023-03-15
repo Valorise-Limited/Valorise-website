@@ -104,21 +104,41 @@
 
 .footer-site-items>div {
     display: flex;
-    margin-top: 3rem;
     padding: 4.8rem 4.8rem;
 
     &>span:first-child {
         flex: 18rem;
         max-width: 18rem;
+        display: inline;
 
         &>img:first-child {
             width: 15rem;
+            
         }
     }
 
     &>span:last-child {
         padding: 0 2rem;
     }
+
+}
+
+.footer-site-items>div {
+    display: flex;
+    padding: 1.2rem 4.8rem;
+
+    &>span:nth-child(2) {
+        flex: 18rem;
+        
+        
+
+       .sdgimage > img{
+            display: inline;
+            margin-left: 1.5rem;
+            
+        }
+    }
+
 
 }
 
@@ -131,6 +151,8 @@
 
     &>span:first-child {
         border-right: 1px solid colors.$brand-blue;
+        
+       
     }
 
 
