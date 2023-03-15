@@ -2,7 +2,7 @@ import ClimateBanner from 'components/climate-banner/ClimateBanner';
 import fleatherImage from "assets/svgs/fleather.svg"
 import React from 'react';
 import "./case-study-details.scss";
-import { Link } from 'react-router-dom';
+
 
 const Fleather = () => {
     return (

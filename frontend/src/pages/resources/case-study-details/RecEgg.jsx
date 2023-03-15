@@ -2,7 +2,7 @@ import ClimateBanner from 'components/climate-banner/ClimateBanner'
 import React from 'react'
 import RecEggImage from "assets/svgs/rec-egg.svg"
 import "./case-study-details.scss";
-import { Link } from 'react-router-dom';
+
 
 
 const RecEgg = () => {

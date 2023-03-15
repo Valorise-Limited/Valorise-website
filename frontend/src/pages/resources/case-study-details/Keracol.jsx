@@ -2,7 +2,7 @@ import ClimateBanner from 'components/climate-banner/ClimateBanner'
 import React from 'react'
 import KeracolImage from "assets/svgs/keracol.svg"
 import "./case-study-details.scss";
-import { Link } from 'react-router-dom';
+
 
 const Keracol = () => {
     return (

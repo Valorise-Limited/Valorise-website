@@ -3,7 +3,7 @@ import ClimateBanner from 'components/climate-banner/ClimateBanner'
 import React from 'react'
 import ShellWorksImage from "assets/svgs/shellworks.svg"
 import "./case-study-details.scss";
-import { Link } from 'react-router-dom';
+
 
 const ShellWorks = () => {
     return (
