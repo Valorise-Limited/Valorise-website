@@ -29,7 +29,7 @@ const Xampla = () => {
                     {/* <div className='case-study__features'>Embracing the circular economy, Pluumo has been designed to be a thermal packaging material for a more sustainable future. Unbeatable performance, powered by feathers.</div> */}
                     <p className='case-study__text'>Xampla has created a plant protein material for commercial use. Their mission is to replace the everyday single-use plastics you see all around, like sachets and flexible packaging films. And the less obvious, such as microplastics within liquids and lotions with a material that performs like synthetic polymers, but decomposes naturally and fully, without harming the environment. It has produced a vitamin microcapsule (vegan and gluten free) to allow drinks manufacturers to add nutrients to beverages without affecting the taste. A soluble film for dishwasher tablets. Food wrapper films that are both edible and cookable that won them the SEAL Business award for Sustainable Innovation. </p>
                     <p className='case-study__text'>
-                    To learn more about Xampla, their products and services visit their  <a target="_blank" href="https://www.xampla.com/" className='case-study__text-link'>website</a>
+                    To learn more about Xampla, their products and services visit their  <a target="_blank" rel="noreferrer" href="https://www.xampla.com/" className='case-study__text-link'>website</a>
                     </p>
                 </section>
             </article>

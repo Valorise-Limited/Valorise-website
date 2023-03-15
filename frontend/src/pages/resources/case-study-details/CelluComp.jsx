@@ -30,7 +30,7 @@ const CelluComp = () => {
                     <p className='case-study__text'>Curran® offers exceptional mechanical and rheological properties for numerous applications, such as paints and coatings, inks, personal care, home care, paper, food, concrete, drilling fluids, composites and other potential applications.</p>
 
                     <p className='case-study__text'>
-                        To read more about CelluComp click <a target="_blank" href="//cellucomp.com" className='case-study__text-link'>here</a>
+                        To read more about CelluComp click <a rel="noreferrer" target="_blank" href="//cellucomp.com" className='case-study__text-link'>here</a>
                     </p>
 
                 </section>

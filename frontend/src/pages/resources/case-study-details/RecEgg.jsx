@@ -29,7 +29,7 @@ const RecEgg = () => {
                     {/* <div className='case-study__features'>Embracing the circular economy, Pluumo has been designed to be a thermal packaging material for a more sustainable future. Unbeatable performance, powered by feathers.</div> */}
                     <p className='case-study__text'>At AVGO, with their revolutionary Rec-egg technology, they have managed to take these eggshells and convert them into food and pharma safe pure Calcium Carbonate. The Calcium Carbonate meets the stringent specifications of the USP, BP, EP and fulfils the requirements of ICH Q3D, for consistently low heavy metals. Additionally, the process can produce a number of other valuable materials which have uses in the food, healthcare and pharmaceutical industries. AVGO BIOTECH is engaged beyond these industries to find applications for other egg process co-products.</p>
                     <p className='case-study__text'>
-                    To read more about Rec-egg and AVGO Biotech Click <a target="_blank" href="https://rec-egg.com/" className='case-study__text-link'>here</a>
+                    To read more about Rec-egg and AVGO Biotech Click <a target="_blank" rel="noreferrer" href="https://rec-egg.com/" className='case-study__text-link'>here</a>
                     </p>
                 </section>
             </article>

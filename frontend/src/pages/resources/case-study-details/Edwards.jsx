@@ -42,7 +42,7 @@ const Edwards = () => {
                     <p className='case-study__text'>This multi award winning spirit has been over 8 years in the making.</p>
 
                     <p className='case-study__text'>
-                         <a href="https://www.edwards1902.co.uk/" target="_blank" className='case-study__text-link'>Click here</a>  to read more about this amazing product and the rest of their range.
+                         <a rel="noreferrer" href="https://www.edwards1902.co.uk/" target="_blank" className='case-study__text-link'>Click here</a>  to read more about this amazing product and the rest of their range.
                     </p>
 
                 </section>

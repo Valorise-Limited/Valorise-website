@@ -31,13 +31,13 @@ const Fleather = () => {
                     <p className='case-study__text'>
                         To read more about Fleather and Phool, please see the links below:
                         <ul className='case-study__external-links'>
-                            <li><a target="_blank" href="//earthshotprize.org/winners-finalists/fleather/" className='case-study__text-link'>
+                            <li><a rel="noreferrer" target="_blank" href="//earthshotprize.org/winners-finalists/fleather/" className='case-study__text-link'>
                                 https://earthshotprize.org/winners-finalists/fleather/
                             </a></li>
-                            <li><a target="_blank" href="https://www.veganfirst.com/article/fleather-the-new-vegan-and-eco-friendly-leather-solving-gangas-floral-waste-problem" className='case-study__text-link'>
+                            <li><a rel="noreferrer" target="_blank" href="https://www.veganfirst.com/article/fleather-the-new-vegan-and-eco-friendly-leather-solving-gangas-floral-waste-problem" className='case-study__text-link'>
                                 https://www.veganfirst.com/article/fleather-the-new-vegan-and-eco-friendly-leather-solving-gangas-floral-waste-problem
                             </a></li>
-                            <li><a target="_blank" href="//phool.co" className='case-study__text-link'>
+                            <li><a rel="noreferrer" target="_blank" href="//phool.co" className='case-study__text-link'>
                                 https://phool.co
                             </a></li>
 

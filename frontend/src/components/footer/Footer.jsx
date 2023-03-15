@@ -113,12 +113,12 @@ const Footer = () => {
 
                 <span>
                   {/* <img src={uksgdLogos} alt="This represent UKSGD logos" /> */}
-                  <a className="sdgimage" href="https://sdgs.un.org/goals/goal7" target="_blank"><img src={sustainability7} alt="Sustainability 7"  /></a>
-                  <a className="sdgimage" href="https://sdgs.un.org/goals/goal11"  target="_blank"><img src={sustainability11} alt="Sustainability 11" /></a>
-                  <a className="sdgimage" href="https://sdgs.un.org/goals/goal12"  target="_blank"><img src={sustainability12} alt="Sustainability 12" /></a>
-                  <a className="sdgimage" href="https://sdgs.un.org/goals/goal13"  target="_blank"><img src={sustainability13} alt="Sustainability 13" /></a>
-                  <a className="sdgimage" href="https://sdgs.un.org/goals/goal14"  target="_blank"><img src={sustainability14} alt="Sustainability 14" /></a>
-                  <a className="sdgimage" href="https://sdgs.un.org/goals/goal15"  target="_blank"><img src={sustainability15} alt="Sustainability 15" /></a>
+                  <a className="sdgimage" rel="noreferrer" href="https://sdgs.un.org/goals/goal7" target="_blank"><img src={sustainability7} alt="Sustainability 7"  /></a>
+                  <a className="sdgimage" rel="noreferrer" href="https://sdgs.un.org/goals/goal11"  target="_blank"><img src={sustainability11} alt="Sustainability 11" /></a>
+                  <a className="sdgimage" rel="noreferrer" href="https://sdgs.un.org/goals/goal12"  target="_blank"><img src={sustainability12} alt="Sustainability 12" /></a>
+                  <a className="sdgimage" rel="noreferrer" href="https://sdgs.un.org/goals/goal13"  target="_blank"><img src={sustainability13} alt="Sustainability 13" /></a>
+                  <a className="sdgimage" rel="noreferrer" href="https://sdgs.un.org/goals/goal14"  target="_blank"><img src={sustainability14} alt="Sustainability 14" /></a>
+                  <a className="sdgimage" rel="noreferrer" href="https://sdgs.un.org/goals/goal15"  target="_blank"><img src={sustainability15} alt="Sustainability 15" /></a>
                 </span>
 
                 <span>
