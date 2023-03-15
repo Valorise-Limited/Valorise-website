@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "./footer.scss";
 import brandLogo from "assets/svgs/valorise-logo.svg";
-import uksgdLogos from "assets/svgs/uksgd-icons.svg";
 import sustainability7 from "assets/svgs/sustainability7.svg"
 import sustainability11 from "assets/svgs/sustainability11.svg"
 import sustainability12 from "assets/svgs/sustainability12.svg"
