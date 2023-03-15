@@ -121,7 +121,7 @@ const Footer = () => {
                 </span>
 
                 <span>
-                  <a href="https://iuk.ktn-uk.org/" rel="noreferrer" target="_blank"></a><img src={innovateUKLogo} alt="This represent uk innovate logo" />
+                  <a href="https://iuk.ktn-uk.org/" rel="noreferrer" target="_blank"><img src={innovateUKLogo} alt="This represent uk innovate logo" /></a>
                 </span>
 
                 <span>
