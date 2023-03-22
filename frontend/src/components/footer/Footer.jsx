@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <footer className="valorise-footer">
       <div className="footer-inner">
-        <div className="footer-upper-content">
+        <div className="footer-upper-content-desktop">
           <section className="upper-content-inner">
             <nav className="footer-site-map">
               <ul className="footer-site-listing">
@@ -102,7 +102,7 @@ const Footer = () => {
             </ul>
           </section>
         </div>
-        <div>
+        <div class="desktop">
             <article className="footer-site-items">
               <div className="item-valorise">
 
@@ -129,6 +129,79 @@ const Footer = () => {
                 </span>
               </div>
             </article>
+        </div>
+        <div className="footer-upper-content-mobile">
+            <div class="footer-link-group-mobile">
+              <Link to={url.aboutUs}>
+                  About Us
+              </Link>
+              <Link to="/about/events">
+                News
+              </Link>
+              <Link to="/about/events">
+                Blog
+              </Link>
+              <Link to="/about/events">
+                Case Studies
+              </Link>
+              <Link to="/about/events">
+                Market Place
+              </Link>
+            </div>
+            <h2 className="footer-site-map__heading-mobile">Get in Touch</h2>
+            <ul className="mobile-get-in-touch"> 
+              <li className="footer-contact-item">
+                <img src={telBlueIcon} alt="telephone icon" />
+                <span>+44&nbsp;(0)&nbsp;7438592793</span>
+              </li>
+              <li className="footer-contact-item">
+                <img src={msgBlueIcon} alt="message icon" />
+                <span>enquires@valorise.co.uk</span>
+              </li>
+              <li className="footer-contact-item">
+                <img src={locationBlueIcon} alt="location icon" />
+                <address className="valorise-address">
+                  <span>Valorise Limited</span>
+                  <span>Concept Business Centre </span>
+                  <span>Kettlestring Lane </span>
+                  <span>York, YO30 4XF, UK</span>
+                </address>
+              </li>
+              <li className="footer-contact-item">
+                <Link to="//twitter.com" target="__blank">
+                  <img src={twitterBlueIcon} alt="twitter icon" />
+                </Link>
+                <Link to="//linkedin.com" target="__blank">
+                  <img src={linkedInBlueIcon} alt="linkedin icon" />
+                </Link>
+              </li>
+            </ul>
+          
+        </div>
+        <div className="mobile">
+            
+            
+            <div className="sdgs">
+              {/* <img src={uksgdLogos} alt="This represent UKSGD logos" /> */}
+              <a className="sdgimage" rel="noreferrer" href="https://sdgs.un.org/goals/goal7" target="_blank"><img src={sustainability7} alt="Sustainability 7"  /></a>
+              <a className="sdgimage" rel="noreferrer" href="https://sdgs.un.org/goals/goal11"  target="_blank"><img src={sustainability11} alt="Sustainability 11" /></a>
+              <a className="sdgimage" rel="noreferrer" href="https://sdgs.un.org/goals/goal12"  target="_blank"><img src={sustainability12} alt="Sustainability 12" /></a>
+              <a className="sdgimage" rel="noreferrer" href="https://sdgs.un.org/goals/goal13"  target="_blank"><img src={sustainability13} alt="Sustainability 13" /></a>
+              <a className="sdgimage" rel="noreferrer" href="https://sdgs.un.org/goals/goal14"  target="_blank"><img src={sustainability14} alt="Sustainability 14" /></a>
+              <a className="sdgimage" rel="noreferrer" href="https://sdgs.un.org/goals/goal15"  target="_blank"><img src={sustainability15} alt="Sustainability 15" /></a>
+            </div>
+
+            <div className="innovateImg">
+              <a  href="https://iuk.ktn-uk.org/" rel="noreferrer" target="_blank"><img  src={innovateUKLogo} alt="This represent uk innovate logo" /></a>
+            </div>
+
+            <span className="innovateText">
+              Fast Start Innovation Project IUK #10044671
+            </span>
+
+            <div className="logoFooter">
+              <img src={brandLogo} alt="This represent valorise logo" />
+            </div>
         </div>
         <div className="footer-lower-content">
           <span className="footer-copyright">

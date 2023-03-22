@@ -1,6 +1,8 @@
 @use "styles/colors" as colors;
 @use "styles/typography" as typo;
 
+
+
 .valorise-footer {
     background-color: colors.$brand-sea-blue;
     font-size: typo.$fz-sm;
@@ -50,7 +52,7 @@
     font-weight: 300;
 }
 
-.footer-upper-content {
+.footer-upper-content-desktop {
     display: flex;
     justify-content: space-between;
     padding: 4.8rem 9.6rem;
@@ -195,4 +197,84 @@
     font-weight: 350;
     display: flex;
     flex-direction: column;
+}
+
+
+.footer-upper-content-mobile{
+    display:none;
+}
+
+.mobile{
+    display:none;
+}
+@media only screen and (max-width:768px) {
+   .footer-upper-content-desktop{
+    display:none;
+   }
+   .desktop{
+    display:none;
+   }
+   .footer-upper-content-mobile{
+    display: block;
+    padding:20px;
+   }
+
+   .footer-link-group-mobile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom:25px;
+   }
+
+   .mobile-get-in-touch{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   }
+   .mobile{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:20px;
+   }
+
+   .sdgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+   }
+   .footer-site-map__heading-mobile{
+    font-weight: 600;
+    color: colors.$brand-blue;
+    text-align: center;
+   
+   }
+
+   .sdgimage{
+    padding:5px;
+   }
+
+   .logoFooter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   }
+   .innovateImg{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+   }
+
+   .innovateText{
+    text-align: center;
+   }
+
+   
 }

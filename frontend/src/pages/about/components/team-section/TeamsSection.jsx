@@ -57,9 +57,11 @@ const TeamsSection = () => {
                         <h5 className='big-heading-5'>{team.full_name}</h5>
                         <p className='large-caption'>{team.position}</p>
                         <div>
-                            <a href={team.email} target="_blank" rel="noopener noreferrer">
+                        {team.email ? 
+                             <a href={team.email} target="_blank" rel="noopener noreferrer">
                                 <img src={message_icon} alt="" />
-                            </a>
+                            </a> : 
+                            ""}
                             <Link to={team.linkedin} target="_blank">
                                 <img src={linkedin_icon} alt="" />
                             </Link>
