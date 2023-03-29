@@ -26,3 +26,17 @@
 .homepage-learnmore-button {
     margin-top: 4.8rem;
 }
+
+@media only screen and (max-width:768px) {
+    .homepage-intro__writeup{
+        // padding-top: 20rem;
+        padding-left: 4rem;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .homepage-intro__writeup{
+        padding-top: 20rem;
+        padding-left: 2rem;
+    }
+}
