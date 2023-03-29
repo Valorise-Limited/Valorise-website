@@ -30,7 +30,7 @@ export const founders = [
 
 export const devTeams = [
     {
-        avatar: abdul, full_name: "Abdulsamad Gobir", position: "Product Manager", summary: "", email: false, linkedin: "//www.linkedin.com/in/abdulsamadgobir"
+        avatar: abdul, full_name: "Abdulsamad Gobir", position: "Product Manager", summary: "Abdulsamad started his Tech career as a  co-founded a tech company to solve the problem of ghost workers in his community but unfortunately, it failed despite being recognized as one of the best 30 startups in Nigeria. However, this experience sparked his passion for developing user-centric products and has successfully built several applications, including an emergency button app, Perimeter attendance app, an E-Learning app, etc working with companies both local and international.In addition, he is a mentor and public speaker who has honed his communication and leadership skills through his involvement with Toastmasters since 2019. As the President of the Gemstones TM Club in 2021, he developed the skills of a salesman and leader with different communication styles.Overall, he is an accomplished product manager and Scrum master who is passionate about developing solutions that make an impact.", email: false, linkedin: "//www.linkedin.com/in/abdulsamadgobir"
     },
     {
         avatar: mehran, full_name: "Mehran Fani", position: "Product Owner", summary: "Mehran Fani comes from a technology and engineering background. He has degrees in both mechanical and automation engineering and experience with business development, product management, and sustainability.", email: "mailto:fani.mehran@gmail.com ", linkedin: "//www.linkedin.com/mwlite/in/mehran-fani-0300583a"
