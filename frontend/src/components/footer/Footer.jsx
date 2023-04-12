@@ -28,9 +28,9 @@ const Footer = () => {
                     <Link to={url.aboutUs}>
                       About Us
                     </Link>
-                    <Link to="/about/events">
+                    {/* <Link to="/about/events">
                       Events
-                    </Link>
+                    </Link> */}
                   </span>
                 </li>
                 <li className="footer-site-links">
@@ -56,9 +56,9 @@ const Footer = () => {
                     <Link to="/resources/news">
                       News
                     </Link>
-                    <Link to="/resources/blog">
+                    {/* <Link to="/resources/blog">
                       Blog
-                    </Link>
+                    </Link> */}
                     <Link to={url.caseStudies}>
                       Case Studies
                     </Link>
@@ -95,7 +95,7 @@ const Footer = () => {
                 <Link to="//twitter.com" target="__blank">
                   <img src={twitterBlueIcon} alt="twitter icon" />
                 </Link>
-                <Link to="//linkedin.com" target="__blank">
+                <Link to="//linkedin.com/company/valorise-limited" target="__blank">
                   <img src={linkedInBlueIcon} alt="linkedin icon" />
                 </Link>
               </li>
@@ -171,7 +171,7 @@ const Footer = () => {
                 <Link to="//twitter.com" target="__blank">
                   <img src={twitterBlueIcon} alt="twitter icon" />
                 </Link>
-                <Link to="//linkedin.com" target="__blank">
+                <Link to="//linkedin.com/company/valorise-limited" target="__blank">
                   <img src={linkedInBlueIcon} alt="linkedin icon" />
                 </Link>
               </li>

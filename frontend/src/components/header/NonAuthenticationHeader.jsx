@@ -84,9 +84,9 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
                 <li>
                   <Link to={url.aboutUs}>About Us</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/about/events">Events</Link>
-                </li>
+                </li> */}
               </ul>
             </div>) : null
           }
@@ -132,9 +132,9 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
                 <li>
                   <Link to="/resources/news">News</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/resources/blog">Blog</Link>
-                </li>
+                </li> */}
                 <li>
                   <Link to={url.caseStudies}>Case Studies</Link>
                 </li>

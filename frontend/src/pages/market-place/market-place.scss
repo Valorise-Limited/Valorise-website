@@ -1,4 +1,5 @@
 @use "styles/typography" as typo;
+@use "styles/colors" as colors;
 
 .coming-soon {
     display: flex;
@@ -23,3 +24,22 @@
 .coming-soon-block {
     padding: 5rem 0 4rem;
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+th {
+    background-color: colors.$brand-sea-green-light;
+    text-align: left;
+    padding: 8px;
+  }
+
+  td{
+    text-align: left;
+    padding: 8px;
+  }
+  
+  
