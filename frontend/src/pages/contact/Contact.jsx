@@ -51,7 +51,7 @@ const Contact = () => {
                                 <li className="valorise-contact__heading big-heading-4">Follow Us</li>
                                 <li className="valorise-contact-item">
                                     <img src={linkedInBlueIcon} alt="telephone icon" />
-                                    <Link to="//linkedin.com">LinkedIn</Link>
+                                    <Link to="//linkedin.com/company/valorise-limited">LinkedIn</Link>
                                 </li>
                                 <li className="valorise-contact-item">
                                     <img src={twitterBlueIcon} alt="message icon" />

@@ -54,14 +54,14 @@ const MarketPlace = () => {
                 <td>10001</td>
               </tr>
               <tr>
-              <td>Brewers spent grain</td>
-                <td>Ideally dried but not essential, for a business located in North Yorkshire</td>
-                <td>10001</td>
+              <td>Item 2</td>
+                <td>Description</td>
+                <td>1XXXX</td>
               </tr>
               <tr>
-              <td>Brewers spent grain</td>
-                <td>Ideally dried but not essential, for a business located in North Yorkshire</td>
-                <td>10001</td>
+              <td>Item 3</td>
+                <td>Description</td>
+                <td>1XXXX</td>
               </tr>
             </table>
 
@@ -74,19 +74,19 @@ const MarketPlace = () => {
                 <th>VRN</th>
               </tr>
               <tr>
-                <td>Brewers spent grain</td>
-                <td>Ideally dried but not essential, for a business located in North Yorkshire</td>
-                <td>10001</td>
+                <td>De-pectinated apple pomace</td>
+                <td>Available as dried powder throughout the year and delivered nationally. Talk to us about your specifications</td>
+                <td>50001</td>
               </tr>
               <tr>
-              <td>Brewers spent grain</td>
-                <td>Ideally dried but not essential, for a business located in North Yorkshire</td>
-                <td>10001</td>
+              <td>Sugar beet</td>
+                <td>Available as dried powder throughout the year and delivered nationally. Talk to us about your specifications</td>
+                <td>50002</td>
               </tr>
               <tr>
-              <td>Brewers spent grain</td>
-                <td>Ideally dried but not essential, for a business located in North Yorkshire</td>
-                <td>10001</td>
+              <td>Item 3</td>
+                <td>Description</td>
+                <td>5XXXX</td>
               </tr>
             </table>
 
