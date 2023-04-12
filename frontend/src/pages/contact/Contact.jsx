@@ -53,10 +53,10 @@ const Contact = () => {
                                     <img src={linkedInBlueIcon} alt="telephone icon" />
                                     <Link to="//linkedin.com/company/valorise-limited">LinkedIn</Link>
                                 </li>
-                                <li className="valorise-contact-item">
+                                {/* <li className="valorise-contact-item">
                                     <img src={twitterBlueIcon} alt="message icon" />
                                     <Link to="//twitter.com">Twitter</Link>
-                                </li>
+                                </li> */}
 
 
                             </ul>

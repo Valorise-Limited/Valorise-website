@@ -92,9 +92,9 @@ const Footer = () => {
                 </address>
               </li>
               <li className="footer-contact-item">
-                <Link to="//twitter.com" target="__blank">
+                {/* <Link to="//twitter.com" target="__blank">
                   <img src={twitterBlueIcon} alt="twitter icon" />
-                </Link>
+                </Link> */}
                 <Link to="//linkedin.com/company/valorise-limited" target="__blank">
                   <img src={linkedInBlueIcon} alt="linkedin icon" />
                 </Link>
