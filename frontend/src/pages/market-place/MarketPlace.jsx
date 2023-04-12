@@ -54,15 +54,15 @@ const MarketPlace = () => {
                 <td>10001</td>
               </tr>
               <tr>
-              <td>Item 2</td>
-                <td>Description</td>
-                <td>1XXXX</td>
+              <td>Organic by-products (may be mixed) </td>
+                <td>Needed countrywide for AD units</td>
+                <td>10002</td>
               </tr>
-              <tr>
+              {/* <tr>
               <td>Item 3</td>
                 <td>Description</td>
                 <td>1XXXX</td>
-              </tr>
+              </tr> */}
             </table>
 
             <h4 className="big-heading-4">Available</h4>
@@ -83,11 +83,11 @@ const MarketPlace = () => {
                 <td>Available as dried powder throughout the year and delivered nationally. Talk to us about your specifications</td>
                 <td>50002</td>
               </tr>
-              <tr>
+              {/* <tr>
               <td>Item 3</td>
                 <td>Description</td>
                 <td>5XXXX</td>
-              </tr>
+              </tr> */}
             </table>
 
             <h3 className='big-heading-3'>Site Advertising</h3>
