@@ -12,7 +12,7 @@ import linkedInBlueIcon from "assets/svgs/brand-blue-linkedin-icon.svg";
 import msgBlueIcon from "assets/svgs/brand-blue-message-icon.svg";
 import locationBlueIcon from "assets/svgs/brand-blue-location-icon.svg";
 import telBlueIcon from "assets/svgs/brand-blue-telephone-icon.svg";
-import twitterBlueIcon from "assets/svgs/brand-blue-twitter-icon.svg";
+// import twitterBlueIcon from "assets/svgs/brand-blue-twitter-icon.svg";
 import * as url from "routes/url"
 const Footer = () => {
   return (
