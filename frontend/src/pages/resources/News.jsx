@@ -5,7 +5,9 @@ import fibreImage from "assets/images/fibre.webp";
 import metallid from "assets/images/metallids.jpeg";
 import glue from "assets/images/glue.webp";
 import ValoriseCardLink from 'components/card/ValoriseCardLink';
+import BrandButton from 'components/button/BrandButton';
 import "./case-studies.scss"
+
 import * as url from "routes/url"
 
 const caseStudies = [
@@ -38,7 +40,7 @@ const caseStudies = [
 
 const News = () => {
   const [items, setItems] = useState([]);
-  // const [visibleItems, setVisibleItems] = useState(4)
+  const [visibleItems, setVisibleItems] = useState(3)
 
   useEffect(() => {
     setItems([...caseStudies])
@@ -61,12 +63,12 @@ const News = () => {
               <ValoriseCardLink cardName={caseStudy.name} image={caseStudy.image} text={caseStudy.text} key={caseStudy.id} className="card-large" linkTo={caseStudy.url} />
             ))}
           </ul>
-          {/* <div className='case-studies__content-loader'>
-            {visibleItems <= 6 ?
+          <div className='case-studies__content-loader'>
+            {visibleItems <= 2 ?
              <BrandButton buttonText={"Load More"} className="primary" buttonType='button' onClick={() => setVisibleItems(prev => prev + 2)} />
              : ""}
             
-          </div> */}
+          </div>
         </section>
       </article>
 
