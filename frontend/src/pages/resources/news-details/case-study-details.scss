@@ -1,0 +1,39 @@
+@use "styles/colors" as colors;
+@use "styles/typography" as typo;
+
+.case-study {
+    padding: 8rem 0;
+}
+
+.case-study__intro {
+    //box-shadow: 0 1px 0 0 lighten(colors.$primary-grey, 40);
+}
+
+.case-study__image-block {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+
+}
+
+.case-study__text {
+    font-size: typo.$fz-md;
+    line-height: typo.$fz-heading-3;
+    font-weight: 350;
+    margin: 3rem 0;
+}
+
+.image-block__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.case-study__features {
+    font-size: typo.$fz-xl;
+    font-weight: 600;
+    color: colors.$brand-blue
+}
+
+.case-study__text-link {
+    text-decoration: underline;
+    color: colors.$brand-blue;
+}
