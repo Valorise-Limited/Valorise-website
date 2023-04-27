@@ -1,5 +1,4 @@
 
-import Fibre from "pages/resources/news-details/fibre";
 import * as url from "./url";
 
 import { lazy } from "react";
