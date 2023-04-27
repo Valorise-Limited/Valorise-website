@@ -6,7 +6,6 @@ import metallid from "assets/images/metallids.jpeg";
 import glue from "assets/images/glue.webp";
 import ValoriseCardLink from 'components/card/ValoriseCardLink';
 import "./case-studies.scss"
-import BrandButton from 'components/button/BrandButton';
 import * as url from "routes/url"
 
 const caseStudies = [
@@ -39,7 +38,7 @@ const caseStudies = [
 
 const News = () => {
   const [items, setItems] = useState([]);
-  const [visibleItems, setVisibleItems] = useState(4)
+  // const [visibleItems, setVisibleItems] = useState(4)
 
   useEffect(() => {
     setItems([...caseStudies])
