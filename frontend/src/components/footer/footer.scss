@@ -276,5 +276,30 @@
     text-align: center;
    }
 
+   .footer-lower-content {
+        background-color: colors.$brand-sea-blue-dark !important;
+        padding: 0.5rem 0.5rem !important;
+        color: colors.$brand-white !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+    }
+
+    .footer-lower-navs{
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+        &>a{
+            &:not(:last-child)::after {
+                display: none;
+            }
+        }
+        
+    }
+
+    .footer-copyright{
+        text-align: center;
+    }
+
    
 }
