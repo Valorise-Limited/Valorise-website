@@ -1,12 +1,18 @@
 .case-studies__listing {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     margin-bottom: 3rem;
 }
 
+@media only screen and (max-width:768px) {
+    .case-studies__listing{
+        flex-wrap: wrap;
+    }
+}
 
 
 .case-studies__btn-block {
     display: flex;
     justify-content: center;
 }
+
