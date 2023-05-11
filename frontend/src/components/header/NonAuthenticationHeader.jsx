@@ -45,12 +45,14 @@ const NonAunthenticationHeader = ({ showHeaderBackground }) => {
     setAboutDropdownActive(false);
     setResourcesDropdownActive(false);
     setServicesDropdownActive(false);
+    setMobileDropdownActive(false);
+
   }
 
 
-  const handleMobileClick = (callback) => {
+  const handleMobileClick =(e) => {
+    e.stopPropagation();
     setMobileDropdownActive(prev => !prev);
-    callback();
   }
   
   useEffect(() => {
