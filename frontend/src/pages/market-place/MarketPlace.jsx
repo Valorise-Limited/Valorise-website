@@ -94,9 +94,7 @@ const MarketPlace = () => {
             <p>To discuss advertising your sustainable products and services on this site please <Link className="link" to="/contact">contact us.</Link> </p>
         </article>
 
-        <section>
-            
-          </section>
+        
 
     </div>
   )
