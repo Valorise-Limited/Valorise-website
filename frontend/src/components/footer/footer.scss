@@ -1,13 +1,15 @@
 @use "styles/colors" as colors;
 @use "styles/typography" as typo;
 
+
+
 .valorise-footer {
-    background-color: colors.$brand-sea-green;
+    background-color: colors.$brand-sea-blue;
     font-size: typo.$fz-sm;
 }
 
 .footer-lower-content {
-    background-color: colors.$brand-dark-green;
+    background-color: colors.$brand-sea-blue-dark;
     padding: 2.4rem 9.6rem;
     color: colors.$brand-white;
     display: flex;
@@ -50,7 +52,7 @@
     font-weight: 300;
 }
 
-.footer-upper-content {
+.footer-upper-content-desktop {
     display: flex;
     justify-content: space-between;
     padding: 4.8rem 9.6rem;
@@ -104,14 +106,16 @@
 
 .footer-site-items>div {
     display: flex;
-    margin-top: 3rem;
+    padding: 4.8rem 4.8rem;
 
     &>span:first-child {
         flex: 18rem;
         max-width: 18rem;
+        display: inline;
 
         &>img:first-child {
             width: 15rem;
+            
         }
     }
 
@@ -121,11 +125,36 @@
 
 }
 
+.footer-site-items>div {
+    display: flex;
+    padding: 1.2rem 4.8rem;
+
+    &>span:nth-child(2) {
+        flex: 18rem;
+        
+        
+
+       .sdgimage > img{
+            display: inline;
+            margin-left: 1.5rem;
+            
+        }
+    }
+
+
+}
+
+.footer-site-items>div>span{
+    padding: 2.4rem;
+}
+
 .footer-site-items>div:first-child {
     align-items: baseline;
 
     &>span:first-child {
         border-right: 1px solid colors.$brand-blue;
+        
+       
     }
 
 
@@ -168,4 +197,109 @@
     font-weight: 350;
     display: flex;
     flex-direction: column;
+}
+
+
+.footer-upper-content-mobile{
+    display:none;
+}
+
+.mobile{
+    display:none;
+}
+@media only screen and (max-width:768px) {
+   .footer-upper-content-desktop{
+    display:none;
+   }
+   .desktop{
+    display:none;
+   }
+   .footer-upper-content-mobile{
+    display: block;
+    padding:20px;
+   }
+
+   .footer-link-group-mobile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom:25px;
+   }
+
+   .mobile-get-in-touch{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   }
+   .mobile{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:20px;
+   }
+
+   .sdgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+   }
+   .footer-site-map__heading-mobile{
+    font-weight: 600;
+    color: colors.$brand-blue;
+    text-align: center;
+   
+   }
+
+   .sdgimage{
+    padding:5px;
+   }
+
+   .logoFooter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   }
+   .innovateImg{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+   }
+
+   .innovateText{
+    text-align: center;
+   }
+
+   .footer-lower-content {
+        background-color: colors.$brand-sea-blue-dark !important;
+        padding: 0.5rem 0.5rem !important;
+        color: colors.$brand-white !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+    }
+
+    .footer-lower-navs{
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+        &>a{
+            &:not(:last-child)::after {
+                display: none;
+            }
+        }
+        
+    }
+
+    .footer-copyright{
+        text-align: center;
+    }
+
+   
 }

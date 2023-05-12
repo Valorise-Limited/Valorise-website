@@ -1,5 +1,5 @@
 .homepage-intro__banner {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
 }
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     z-index: -1;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
 
 }
@@ -25,4 +25,18 @@
 
 .homepage-learnmore-button {
     margin-top: 4.8rem;
+}
+
+@media only screen and (max-width:768px) {
+    .homepage-intro__writeup{
+        // padding-top: 20rem;
+        padding-left: 4rem;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .homepage-intro__writeup{
+        padding-top: 20rem;
+        padding-left: 2rem;
+    }
 }

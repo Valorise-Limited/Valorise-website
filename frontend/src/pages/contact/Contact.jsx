@@ -6,7 +6,7 @@ import linkedInBlueIcon from "assets/svgs/brand-blue-linkedin-icon.svg";
 import msgBlueIcon from "assets/svgs/brand-blue-message-icon.svg";
 import locationBlueIcon from "assets/svgs/brand-blue-location-icon.svg";
 import telBlueIcon from "assets/svgs/brand-blue-telephone-icon.svg";
-import twitterBlueIcon from "assets/svgs/brand-blue-twitter-icon.svg";
+// import twitterBlueIcon from "assets/svgs/brand-blue-twitter-icon.svg";
 import hourglassBlueIcon from "assets/svgs/brand-blue-hourglass-icon.svg"
 import { Link } from 'react-router-dom';
 
@@ -51,12 +51,12 @@ const Contact = () => {
                                 <li className="valorise-contact__heading big-heading-4">Follow Us</li>
                                 <li className="valorise-contact-item">
                                     <img src={linkedInBlueIcon} alt="telephone icon" />
-                                    <Link to="//linkedin.com">LinkedIn</Link>
+                                    <Link to="//linkedin.com/company/valorise-limited">LinkedIn</Link>
                                 </li>
-                                <li className="valorise-contact-item">
+                                {/* <li className="valorise-contact-item">
                                     <img src={twitterBlueIcon} alt="message icon" />
                                     <Link to="//twitter.com">Twitter</Link>
-                                </li>
+                                </li> */}
 
 
                             </ul>
@@ -65,7 +65,7 @@ const Contact = () => {
                             <div className='contact-form__inner-block'>
                                 <div className='contact-form__control'>
                                     <div className='form-label'>
-                                        <label>tag</label>
+                                        <label>First name</label>
                                     </div>
                                     <div className='brand-input'>
                                         <input type="text" placeholder="Jon" />

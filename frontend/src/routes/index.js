@@ -8,7 +8,7 @@ const Contact = lazy(() => import("pages/contact/Contact"));
 const MarketPlace = lazy(() => import("pages/market-place/MarketPlace"));
 const Blog = lazy(() => import("pages/resources/Blog"));
 const CaseStudies = lazy(() => import("pages/resources/CaseStudies"));
-const CaseStudyPlummo = lazy(() => import("pages/resources/case-study-details/Pluumo"));
+const CaseStudyPlummo = lazy(() => import("pages/resources/case-study-details/Plummo"));
 const CaseStudyShellworks = lazy(() => import("pages/resources/case-study-details/Shellworks"));
 const CaseStudyCelluComp = lazy(() => import("pages/resources/case-study-details/CelluComp"));
 const CaseStudyXampla = lazy(() => import("pages/resources/case-study-details/Xampla"));
@@ -17,12 +17,17 @@ const CaseStudyRecEgg = lazy(() => import("pages/resources/case-study-details/Re
 const CaseStudyFleather = lazy(() => import("pages/resources/case-study-details/Fleather"));
 const CaseStudyEdwards = lazy(() => import("pages/resources/case-study-details/Edwards"));
 const News = lazy(() => import("pages/resources/News"));
+const NewsFibre = lazy(()=> import("pages/resources/news-details/fibre"));
+const NewsMetallids = lazy(() => import("pages/resources/news-details/metallids"));
+const NewsGlue = lazy(() => import("pages/resources/news-details/glue"));
 const Analytical = lazy(() => import("pages/valorise-services/Analytical"));
 const Consultancy = lazy(() => import("pages/valorise-services/Consultancy"));
 const Processing = lazy(() => import("pages/valorise-services/Processing"));
 const TransportLogistics = lazy(() => import("pages/valorise-services/TransportLogistics"));
 const WasteRegulated = lazy(() => import("pages/valorise-services/WasteRegulated"));
 const PrivacyPolicy = lazy(() => import("pages/legal/PrivacyPolicy"));
+const EdiPolicy = lazy(() => import("pages/legal/EdiPolicy"));
+const Sustainability = lazy(() => import("pages/legal/Sustainability"));
 const Events = lazy(() => import("pages/about/Events"));
 const FAQ = lazy(() => import("pages/about/FAQ"));
 const MeetTheTeam = lazy(() => import("pages/about/MeetTheTeam"));
@@ -47,7 +52,15 @@ const publicRoutes = [
     {
         path: "/resources/news", element: <News />
     },
-
+    {
+        path: url.NewsFibre, element: <NewsFibre/>
+    },
+    {
+        path: url.NewsMetallids, element: <NewsMetallids/>
+    },
+    {
+        path: url.NewsGlue, element: <NewsGlue/>
+    },
     {
         path: url.caseStudies, element: <CaseStudies />
     },
@@ -97,6 +110,13 @@ const publicRoutes = [
     {
         path: url.privacy, element: <PrivacyPolicy />
     },
+    {
+        path: url.edipolicy, element: <EdiPolicy />
+    },
+    {
+        path: url.sustainability, element: <Sustainability />
+    },
+
 
     {
         path: url.contactUs, element: <Contact />

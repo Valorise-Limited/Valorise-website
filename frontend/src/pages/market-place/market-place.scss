@@ -1,0 +1,50 @@
+@use "styles/typography" as typo;
+@use "styles/colors" as colors;
+
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &>span:first-child {
+        font-size: typo.$fz-xxl-2;
+        margin-bottom: 5rem;
+    }
+
+    &>span:last-child {
+        display: flex;
+        flex-direction: column;
+
+        &>img {
+            max-width: 60.07rem
+        }
+    }
+}
+
+.coming-soon-block {
+    padding: 5rem 0 4rem;
+}
+
+article{
+    padding: 0 0.8rem !important;
+    margin-bottom: 2.4rem;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+th {
+    background-color: colors.$brand-sea-green-light;
+    text-align: left;
+    padding: 8px;
+  }
+
+  td{
+    text-align: left;
+    padding: 8px;
+  }
+  
+  

@@ -15,6 +15,7 @@
     figure {
         width: 90%;
         margin: 0 auto;
+        cursor: pointer;
         border-radius: 16px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
         .avatar {
@@ -36,10 +37,90 @@
                 align-items: center;
             }
         }
+        &:hover {
+            figcaption {
+                transition: ease-in-out 300ms;
+                background: colors.$brand-sea-green;
+            }
+        }
         
         @media (min-width: 768px) {
             width: 250px;
             margin: 0;
         }
+
+        @media(max-width:768px){
+
+        }
     }
 }
+
+// @use "styles/colors" as colors;
+
+// .aboutpage-team__section {
+//     padding: 0 9.6rem 0 9.6rem;
+
+//     @media (max-width:1024px) {
+//         padding: 1rem;
+//     }
+// }
+
+// .d-flex {
+//     flex-flow: wrap;
+//     margin-top: 16px;
+//     margin-bottom: 64px;
+    
+//     figure {
+//         width: 22% !important;
+//         margin: 0 auto;
+//         border-radius: 16px;
+//         height: 400px !important;
+//         overflow: hidden;
+//         background-color: colors.$brand-sea-green-light;
+//         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+//         .avatar {
+//             width: 100% !important;
+//             height: 60% !important;
+//             object-fit: cover;
+//             border-top-left-radius: 16px;
+//             border-top-right-radius: 16px;
+//         }
+
+//         @media (max-width:1024px) {
+//             width: 30% !important;
+//         }
+
+//         @media (max-width:768px) {
+//             width: 40% !important;
+//         }
+
+//         @media (max-width:425px) {
+//             width: 90% !important;
+//         }
+
+//         figcaption { 
+//             padding: 16px;
+//             border-bottom-left-radius: 16px;
+//             border-bottom-right-radius: 16px;
+//             width: 100% !important;
+//             height: 40% !important;
+//             div {
+//                 margin-top: 20px;
+//                 display: flex;
+//                 gap: 24px;
+//                 align-items: center;
+//             }
+//         }
+
+        
+        
+//         @media (min-width: 768px) {
+//             width: 250px;
+//             margin: 0;
+//         }
+//     }
+
+//     figure:hover{
+//         background-color: colors.$brand-dark-sea-green;
+//     }
+// }

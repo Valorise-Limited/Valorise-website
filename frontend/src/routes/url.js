@@ -4,6 +4,11 @@ const aboutUs = "/about/team";
 const contactUs = "/contact"
 const marketplace = "marketplace";
 const privacy = "/legal/privacy-policy";
+const edipolicy = "/legal/edi-policy";
+const sustainability = "/legal/sustainability";
+const NewsFibre = "/resources/news/fibre";
+const NewsMetallids = "/resources/news/metallids";
+const NewsGlue = "/resources/news/glue"; 
 const caseStudies = `/resources/case-studies`;
 const caseStudyPlummo = `${caseStudies}/plummo`;
 const caseStudyCelluComp = `${caseStudies}/cellucomp`;
@@ -14,12 +19,15 @@ const caseStudyKeracol = `${caseStudies}/keracol`;
 const caseStudyRecEgg = `${caseStudies}/rec-egg`;
 const caseStudyShellworks = `${caseStudies}/shellworks`;
 
+
 export {
     home,
     aboutUs,
     marketplace,
     contactUs,
     privacy,
+    edipolicy,
+    sustainability,
     caseStudies,
     caseStudyCelluComp,
     caseStudyEdwards,
@@ -29,4 +37,7 @@ export {
     caseStudyRecEgg,
     caseStudyShellworks,
     caseStudyXampla,
+    NewsFibre,
+    NewsMetallids,
+    NewsGlue
 }

@@ -99,7 +99,7 @@ const CaseStudies = () => {
           <p className='large-text-writeup text-center case-studies-writeup line-height-xl'>
             Take a look through our case studies to see what a mix of science, entrepreneurship and a passion for the environment can achieve to bring green solutions for our blue planet.
           </p>
-          <h3 className='big-heading-4 case-studies--heading'>Have a by-product that just goes to landfill? Find out if you can Valorise it and talk to one of our experts</h3>
+          <h3 className='big-heading-4 case-studies--heading'>Do you have a by-product that just goes to landfill? Find out if you can Valorise it and talk to our experts</h3>
         </section>
         <section>
           <ul className='case-studies-list'>
@@ -108,7 +108,10 @@ const CaseStudies = () => {
             ))}
           </ul>
           <div className='case-studies__content-loader'>
-            <BrandButton buttonText={"Load More"} className="secondary" buttonType='button' onClick={() => setVisibleItems(prev => prev + 2)} />
+            {visibleItems <= 6 ?
+             <BrandButton buttonText={"Load More"} className="primary" buttonType='button' onClick={() => setVisibleItems(prev => prev + 2)} />
+             : ""}
+            
           </div>
         </section>
       </article>

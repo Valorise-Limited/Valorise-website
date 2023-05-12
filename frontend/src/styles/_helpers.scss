@@ -6,9 +6,11 @@
 .brand-container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     width: 100%;
+
+    
 
     @media (min-width: 576px) {
         max-width: 54rem;
@@ -107,6 +109,10 @@
     font-weight: 900;
     letter-spacing: 1.5%;
     line-height: 7.8rem;
+
+    @media(max-width: 768px){
+        line-height: 6.0rem;
+    }
 }
 
 .big-heading-2 {
@@ -147,12 +153,20 @@
     @media(max-width: 1280px) {
         max-width: 70rem;
     }
+
+    @media(max-width: 768px){
+        line-height: 4rem;
+    }
 }
 
 .large-text-writeup {
     font-size: clamp(3rem, 4vw, typo.$fz-xxl-2);
     max-width: calc((102.6rem / 120rem) * 100%);
     margin: 0 auto;
+
+    @media(max-width:768px){
+        font-size: clamp(2rem, 4vw, typo.$fz-xxl-2);
+    }
 
 
 }
@@ -169,8 +183,20 @@
     margin-top: 6.4rem;
 }
 
+.margin-bottom-64 {
+    margin-bottom: 6.4rem;
+}
+
 .largest-padding {
     padding: 6rem 0 6.4rem;
+
+    @media(max-width:768px) {
+        padding: 4rem 0 4.4rem;
+    }
+}
+
+.mr-2{
+    margin-right: 24px;
 }
 
 
@@ -236,6 +262,19 @@
     /* We multiply by 1rem to essentially stick a rem unit to a number. */
     font-size: calc((var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) / (var(--fluid-type-max-screen) - var(--fluid-type-min-screen)));
 }
+
+
+.justify-text{
+    text-align: justify;
+}
+
+.link{
+    color:blue;
+    text-decoration: underline;
+}
+
+
+
 
 /*
 * SET LOCKS ON ELEMENTS

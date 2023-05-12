@@ -15,10 +15,10 @@ const MeetTheTeam = () => {
       <AboutSection/>
       <TeamsSection/>
       {/* Policy */}
-      <div className="aboutpage-edi__section">
+      {/* <div className="aboutpage-edi__section">
         <h3 className="big-heading-3">EDI Policy</h3>
         <p>The Valorise initiative is led by a team of thoughtful leaders at the cutting edge of the emerging agri-food by-product (AFBF) industry</p>
-      </div>
+      </div> */}
     </>
   )
 }

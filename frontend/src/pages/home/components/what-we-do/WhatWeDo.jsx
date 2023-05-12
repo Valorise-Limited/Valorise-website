@@ -10,7 +10,7 @@ const WhatWeDo = () => {
     return (
         <section className='wwd'>
             <article className='homepage-article'>
-                <div className='brand-container'>
+                <div className='brand-container '>
                     <div className='homepage-article__upper-content'>
                         <div className='homepage-article-text'>
                             <h3 className='big-heading-3'>What We Do?</h3>
