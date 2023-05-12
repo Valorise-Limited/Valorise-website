@@ -15,4 +15,9 @@
     position: absolute;
     top: 18rem;
     left: 10rem;
+
+    @media (max-width:768px){
+        top:13rem;
+        font-size: 32px;
+    }
 }

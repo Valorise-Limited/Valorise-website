@@ -66,6 +66,9 @@ const Footer = () => {
                 </li>
                 <li className="footer-site-links">
                   <span className="footer-site-map__heading">Market Place</span>
+                  <Link to={url.marketplace}>
+                      Marketplace
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -141,10 +144,10 @@ const Footer = () => {
               <Link to="/about/events">
                 Blog
               </Link>
-              <Link to="/about/events">
+              <Link to={url.caseStudies}>
                 Case Studies
               </Link>
-              <Link to="/about/events">
+              <Link to={url.marketplace}>
                 Market Place
               </Link>
             </div>
